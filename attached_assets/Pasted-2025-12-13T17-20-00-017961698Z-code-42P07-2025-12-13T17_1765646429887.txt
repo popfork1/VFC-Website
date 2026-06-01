@@ -1,0 +1,50 @@
+2025-12-13T17:20:00.017961698Z   code: '42P07',
+2025-12-13T17:20:00.017965578Z   message: 'relation "stream_requests" already exists, skipping',
+2025-12-13T17:20:00.017968378Z   file: 'parse_utilcmd.c',
+2025-12-13T17:20:00.017971328Z   line: '208',
+2025-12-13T17:20:00.017974228Z   routine: 'transformCreateStmt'
+2025-12-13T17:20:00.017976928Z }
+2025-12-13T17:20:00.019188653Z {
+2025-12-13T17:20:00.019196833Z   severity_local: 'NOTICE',
+2025-12-13T17:20:00.019199594Z   severity: 'NOTICE',
+2025-12-13T17:20:00.019201934Z   code: '42P07',
+2025-12-13T17:20:00.019204394Z   message: 'relation "settings" already exists, skipping',
+2025-12-13T17:20:00.019206494Z   file: 'parse_utilcmd.c',
+2025-12-13T17:20:00.019208664Z   line: '208',
+2025-12-13T17:20:00.019219744Z   routine: 'transformCreateStmt'
+2025-12-13T17:20:00.019222444Z }
+2025-12-13T17:20:00.019338407Z Database schema initialized successfully
+2025-12-13T17:20:00.413439741Z 5:20:00 PM [express] serving on port 10000
+2025-12-13T17:20:01.89351468Z ==> Your service is live 🎉
+2025-12-13T17:20:02.476035024Z ==> 
+2025-12-13T17:20:02.508821222Z ==> ///////////////////////////////////////////////////////////
+2025-12-13T17:20:02.540426619Z ==> 
+2025-12-13T17:20:02.574775346Z ==> Available at your primary URL https://urfl-fan-network.onrender.com
+2025-12-13T17:20:03.150748901Z ==> 
+2025-12-13T17:20:03.200937147Z ==> ///////////////////////////////////////////////////////////
+2025-12-13T17:20:09.815892138Z node:internal/process/promises:394
+2025-12-13T17:20:09.815917509Z     triggerUncaughtException(err, true /* fromPromise */);
+2025-12-13T17:20:09.815921469Z     ^
+2025-12-13T17:20:09.81592381Z 
+2025-12-13T17:20:09.81592665Z PostgresError: null value in column "id" of relation "users" violates not-null constraint
+2025-12-13T17:20:09.81593089Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-13T17:20:09.81593346Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-13T17:20:09.8159358Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-13T17:20:09.81593835Z     at Socket.emit (node:events:518:28)
+2025-12-13T17:20:09.81594077Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-13T17:20:09.81594409Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-13T17:20:09.81594661Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-13T17:20:09.81594936Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-13T17:20:09.81595204Z   severity_local: 'ERROR',
+2025-12-13T17:20:09.81595463Z   severity: 'ERROR',
+2025-12-13T17:20:09.81595713Z   code: '23502',
+2025-12-13T17:20:09.815960531Z   detail: 'Failing row contains (null, undefined@urfl.com, null, , null, 2025-12-13 17:20:09.812247, 2025-12-13 17:20:09.812247, null, null, null).',
+2025-12-13T17:20:09.815963211Z   schema_name: 'public',
+2025-12-13T17:20:09.815965581Z   table_name: 'users',
+2025-12-13T17:20:09.815968171Z   column_name: 'id',
+2025-12-13T17:20:09.815970601Z   file: 'execMain.c',
+2025-12-13T17:20:09.815972931Z   line: '2209',
+2025-12-13T17:20:09.815975571Z   routine: 'ReportNotNullViolationError'
+2025-12-13T17:20:09.815978031Z }
+2025-12-13T17:20:09.815980331Z 
+2025-12-13T17:20:09.815982791Z Node.js v22.16.0
