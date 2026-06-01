@@ -1,0 +1,78 @@
+2025-12-24T01:49:49.182997485Z   message: 'relation "stream_requests" already exists, skipping',
+2025-12-24T01:49:49.182999805Z   file: 'parse_utilcmd.c',
+2025-12-24T01:49:49.183001555Z   line: '208',
+2025-12-24T01:49:49.183003375Z   routine: 'transformCreateStmt'
+2025-12-24T01:49:49.183005075Z }
+2025-12-24T01:49:49.183737783Z {
+2025-12-24T01:49:49.183745363Z   severity_local: 'NOTICE',
+2025-12-24T01:49:49.183747503Z   severity: 'NOTICE',
+2025-12-24T01:49:49.183749213Z   code: '42P07',
+2025-12-24T01:49:49.183751603Z   message: 'relation "settings" already exists, skipping',
+2025-12-24T01:49:49.183754183Z   file: 'parse_utilcmd.c',
+2025-12-24T01:49:49.183757353Z   line: '208',
+2025-12-24T01:49:49.183776924Z   routine: 'transformCreateStmt'
+2025-12-24T01:49:49.183779974Z }
+2025-12-24T01:49:49.184545042Z {
+2025-12-24T01:49:49.184554643Z   severity_local: 'NOTICE',
+2025-12-24T01:49:49.184557952Z   severity: 'NOTICE',
+2025-12-24T01:49:49.184560572Z   code: '42P07',
+2025-12-24T01:49:49.184563123Z   message: 'relation "partners" already exists, skipping',
+2025-12-24T01:49:49.184565673Z   file: 'parse_utilcmd.c',
+2025-12-24T01:49:49.184568353Z   line: '208',
+2025-12-24T01:49:49.184571723Z   routine: 'transformCreateStmt'
+2025-12-24T01:49:49.184573673Z }
+2025-12-24T01:49:49.186068149Z {
+2025-12-24T01:49:49.186082369Z   severity_local: 'NOTICE',
+2025-12-24T01:49:49.18608656Z   severity: 'NOTICE',
+2025-12-24T01:49:49.186089469Z   code: '42P07',
+2025-12-24T01:49:49.18609324Z   message: 'relation "user_preferences" already exists, skipping',
+2025-12-24T01:49:49.18609626Z   file: 'parse_utilcmd.c',
+2025-12-24T01:49:49.18609924Z   line: '208',
+2025-12-24T01:49:49.18610221Z   routine: 'transformCreateStmt'
+2025-12-24T01:49:49.18610506Z }
+2025-12-24T01:49:49.191605643Z {
+2025-12-24T01:49:49.191617003Z   severity_local: 'NOTICE',
+2025-12-24T01:49:49.191619733Z   severity: 'NOTICE',
+2025-12-24T01:49:49.191621583Z   code: '42P07',
+2025-12-24T01:49:49.191623853Z   message: 'relation "update_plans" already exists, skipping',
+2025-12-24T01:49:49.191625693Z   file: 'parse_utilcmd.c',
+2025-12-24T01:49:49.191627403Z   line: '208',
+2025-12-24T01:49:49.191629093Z   routine: 'transformCreateStmt'
+2025-12-24T01:49:49.191630823Z }
+2025-12-24T01:49:49.19191834Z Database schema initialized successfully
+2025-12-24T01:49:49.46838926Z 1:49:49 AM [express] serving on port 10000
+2025-12-24T01:49:54.262800508Z ==> Your service is live 🎉
+2025-12-24T01:49:54.294508166Z ==> 
+2025-12-24T01:49:54.322560984Z ==> ///////////////////////////////////////////////////////////
+2025-12-24T01:49:54.360074862Z ==> 
+2025-12-24T01:49:54.388830192Z ==> Available at your primary URL https://urfl-testing-website-43028430958-1.onrender.com
+2025-12-24T01:49:54.41775831Z ==> 
+2025-12-24T01:49:54.450815598Z ==> ///////////////////////////////////////////////////////////
+2025-12-24T01:50:27.836003877Z ==> Running 'npm run start'
+2025-12-24T01:50:28.833039464Z 
+2025-12-24T01:50:28.833077825Z > rest-express@1.0.0 start
+2025-12-24T01:50:28.833083595Z > NODE_ENV=production node dist/index.js
+2025-12-24T01:50:28.833086185Z 
+2025-12-24T01:50:21.700205686Z node:internal/process/promises:394
+2025-12-24T01:50:21.700236007Z     triggerUncaughtException(err, true /* fromPromise */);
+2025-12-24T01:50:21.700241077Z     ^
+2025-12-24T01:50:21.700245357Z 
+2025-12-24T01:50:21.700249597Z PostgresError: column "has_seen_christmas_popup" does not exist
+2025-12-24T01:50:21.700254197Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-24T01:50:21.700259347Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-24T01:50:21.700263838Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-24T01:50:21.700268548Z     at Socket.emit (node:events:518:28)
+2025-12-24T01:50:21.700272738Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-24T01:50:21.700276788Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-24T01:50:21.700281318Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-24T01:50:21.700285948Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-24T01:50:21.700289748Z   severity_local: 'ERROR',
+2025-12-24T01:50:21.700294238Z   severity: 'ERROR',
+2025-12-24T01:50:21.700298328Z   code: '42703',
+2025-12-24T01:50:21.700302348Z   position: '108',
+2025-12-24T01:50:21.700306299Z   file: 'parse_relation.c',
+2025-12-24T01:50:21.700310479Z   line: '3822',
+2025-12-24T01:50:21.700314219Z   routine: 'errorMissingColumn'
+2025-12-24T01:50:21.700318239Z }
+2025-12-24T01:50:21.700322579Z 
+2025-12-24T01:50:21.700326479Z Node.js v22.16.0
