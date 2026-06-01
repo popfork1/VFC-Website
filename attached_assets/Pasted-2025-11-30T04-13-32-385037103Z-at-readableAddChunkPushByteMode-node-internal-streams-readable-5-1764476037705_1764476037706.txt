@@ -1,0 +1,50 @@
+2025-11-30T04:13:32.385037103Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-11-30T04:13:32.385039653Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-11-30T04:13:32.385041743Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-11-30T04:13:32.385045263Z   severity_local: 'ERROR',
+2025-11-30T04:13:32.385047933Z   severity: 'ERROR',
+2025-11-30T04:13:32.385050073Z   code: '42703',
+2025-11-30T04:13:32.385052143Z   position: '52',
+2025-11-30T04:13:32.385054103Z   file: 'parse_relation.c',
+2025-11-30T04:13:32.385056183Z   line: '3822',
+2025-11-30T04:13:32.385058293Z   routine: 'errorMissingColumn'
+2025-11-30T04:13:32.385060283Z }
+2025-11-30T04:13:32.38775949Z 4:13:32 AM [express] GET /api/standings 500 in 6ms :: {"message":"Failed to fetch standings"}
+2025-11-30T04:13:32.450011045Z New WebSocket connection
+2025-11-30T04:13:37.09975874Z WebSocket connection closed
+2025-11-30T04:13:37.115826147Z Error fetching standings: PostgresError: column "point_differential" does not exist
+2025-11-30T04:13:37.115841488Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-11-30T04:13:37.115844458Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-11-30T04:13:37.115846988Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-11-30T04:13:37.115849498Z     at Socket.emit (node:events:518:28)
+2025-11-30T04:13:37.115852648Z     at addChunk (node:internal/streams/readable:561:12)
+2025-11-30T04:13:37.115855528Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-11-30T04:13:37.115857998Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-11-30T04:13:37.115860098Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-11-30T04:13:37.115862908Z   severity_local: 'ERROR',
+2025-11-30T04:13:37.115865598Z   severity: 'ERROR',
+2025-11-30T04:13:37.115867668Z   code: '42703',
+2025-11-30T04:13:37.115869748Z   position: '52',
+2025-11-30T04:13:37.115871758Z   file: 'parse_relation.c',
+2025-11-30T04:13:37.115873908Z   line: '3822',
+2025-11-30T04:13:37.115876098Z   routine: 'errorMissingColumn'
+2025-11-30T04:13:37.115878258Z }
+2025-11-30T04:13:37.118785679Z 4:13:37 AM [express] GET /api/standings 500 in 6ms :: {"message":"Failed to fetch standings"}
+2025-11-30T04:13:39.627223141Z Error upserting standing: PostgresError: column "point_differential" does not exist
+2025-11-30T04:13:39.627242181Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-11-30T04:13:39.627244991Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-11-30T04:13:39.627247421Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-11-30T04:13:39.627249961Z     at Socket.emit (node:events:518:28)
+2025-11-30T04:13:39.627253281Z     at addChunk (node:internal/streams/readable:561:12)
+2025-11-30T04:13:39.627256341Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-11-30T04:13:39.627258762Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-11-30T04:13:39.627260931Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-11-30T04:13:39.627263491Z   severity_local: 'ERROR',
+2025-11-30T04:13:39.627266051Z   severity: 'ERROR',
+2025-11-30T04:13:39.627268232Z   code: '42703',
+2025-11-30T04:13:39.627279452Z   position: '52',
+2025-11-30T04:13:39.627281832Z   file: 'parse_relation.c',
+2025-11-30T04:13:39.627283992Z   line: '3822',
+2025-11-30T04:13:39.627286202Z   routine: 'errorMissingColumn'
+2025-11-30T04:13:39.627306012Z }
+2025-11-30T04:13:39.630243804Z 4:13:39 AM [express] POST /api/standings 400 in 8ms :: {"message":"Failed to save standing"}
