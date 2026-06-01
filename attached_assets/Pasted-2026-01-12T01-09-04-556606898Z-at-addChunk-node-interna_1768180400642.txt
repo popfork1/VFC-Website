@@ -1,0 +1,50 @@
+2026-01-12T01:09:04.556606898Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-12T01:09:04.556610708Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-12T01:09:04.556613928Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-12T01:09:04.556617228Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-12T01:09:04.556621769Z   severity_local: 'ERROR',
+2026-01-12T01:09:04.556625799Z   severity: 'ERROR',
+2026-01-12T01:09:04.556647701Z   code: '42703',
+2026-01-12T01:09:04.556651371Z   position: '22',
+2026-01-12T01:09:04.556654711Z   file: 'parse_relation.c',
+2026-01-12T01:09:04.556657891Z   line: '3722',
+2026-01-12T01:09:04.556661132Z   routine: 'errorMissingColumn'
+2026-01-12T01:09:04.556664342Z }
+2026-01-12T01:09:04.637440001Z 1:09:04 AM [express] GET /api/games/all 500 in 215ms :: {"message":"Failed to fetch games"}
+2026-01-12T01:09:08.904851587Z Error creating game: PostgresError: column "season" of relation "games" does not exist
+2026-01-12T01:09:08.904868399Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-12T01:09:08.904870629Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-12T01:09:08.904872749Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-12T01:09:08.904876459Z     at TLSSocket.emit (node:events:518:28)
+2026-01-12T01:09:08.904878799Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-12T01:09:08.90488206Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-12T01:09:08.90488382Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-12T01:09:08.90488565Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-12T01:09:08.90488793Z   severity_local: 'ERROR',
+2026-01-12T01:09:08.90489152Z   severity: 'ERROR',
+2026-01-12T01:09:08.904893221Z   code: '42703',
+2026-01-12T01:09:08.90489489Z   position: '36',
+2026-01-12T01:09:08.904896621Z   file: 'parse_target.c',
+2026-01-12T01:09:08.904898301Z   line: '1066',
+2026-01-12T01:09:08.904899931Z   routine: 'checkInsertTargets'
+2026-01-12T01:09:08.904930373Z }
+2026-01-12T01:09:08.972723171Z 1:09:08 AM [express] POST /api/games 400 in 205ms :: {"message":"Failed to create game"}
+2026-01-12T01:09:11.234962474Z Error fetching current week games: PostgresError: column "season" does not exist
+2026-01-12T01:09:11.234988985Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-12T01:09:11.234992806Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-12T01:09:11.234995246Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-12T01:09:11.234997956Z     at TLSSocket.emit (node:events:518:28)
+2026-01-12T01:09:11.235001146Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-12T01:09:11.235003877Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-12T01:09:11.235006407Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-12T01:09:11.235008937Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-12T01:09:11.235011897Z   severity_local: 'ERROR',
+2026-01-12T01:09:11.235015007Z   severity: 'ERROR',
+2026-01-12T01:09:11.235017518Z   code: '42703',
+2026-01-12T01:09:11.235019858Z   position: '22',
+2026-01-12T01:09:11.235022168Z   file: 'parse_relation.c',
+2026-01-12T01:09:11.235024748Z   line: '3722',
+2026-01-12T01:09:11.235027078Z   routine: 'errorMissingColumn'
+2026-01-12T01:09:11.235029599Z }
+2026-01-12T01:09:11.303150021Z 1:09:11 AM [express] GET /api/games/current 500 in 202ms :: {"message":"Failed to fetch games"}
+2026-01-12T01:09:14.157176998Z 1:09:14 AM [express] GET /api/settings/breaking-news 304 in 533ms :: {"message":"","active":false,"e…
