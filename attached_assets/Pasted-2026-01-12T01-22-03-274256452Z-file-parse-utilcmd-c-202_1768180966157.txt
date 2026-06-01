@@ -1,0 +1,100 @@
+2026-01-12T01:22:03.274256452Z   file: 'parse_utilcmd.c',
+2026-01-12T01:22:03.274258772Z   line: '207',
+2026-01-12T01:22:03.274261041Z   routine: 'transformCreateStmt'
+2026-01-12T01:22:03.274263481Z }
+2026-01-12T01:22:03.338458678Z {
+2026-01-12T01:22:03.338474429Z   severity_local: 'NOTICE',
+2026-01-12T01:22:03.338478249Z   severity: 'NOTICE',
+2026-01-12T01:22:03.338480879Z   code: '42P07',
+2026-01-12T01:22:03.33851559Z   message: 'relation "parlays" already exists, skipping',
+2026-01-12T01:22:03.33851813Z   file: 'parse_utilcmd.c',
+2026-01-12T01:22:03.33852058Z   line: '207',
+2026-01-12T01:22:03.33852301Z   routine: 'transformCreateStmt'
+2026-01-12T01:22:03.33852565Z }
+2026-01-12T01:22:03.33852892Z Database schema initialized successfully
+2026-01-12T01:22:03.661590803Z 1:22:03 AM [express] serving on port 10000
+2026-01-12T01:22:04.241429118Z ==> Your service is live 🎉
+2026-01-12T01:22:04.279511554Z ==> 
+2026-01-12T01:22:04.312186531Z ==> ///////////////////////////////////////////////////////////
+2026-01-12T01:22:04.342968047Z ==> 
+2026-01-12T01:22:04.376932153Z ==> Available at your primary URL https://urfl-testing-website-43028430958-1.onrender.com
+2026-01-12T01:22:04.40940254Z ==> 
+2026-01-12T01:22:04.441833877Z ==> ///////////////////////////////////////////////////////////
+2026-01-12T01:22:20.723563468Z Error fetching all games: PostgresError: column "season" does not exist
+2026-01-12T01:22:20.723584039Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-12T01:22:20.723589119Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-12T01:22:20.723591629Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-12T01:22:20.723594729Z     at TLSSocket.emit (node:events:518:28)
+2026-01-12T01:22:20.723597759Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-12T01:22:20.723600639Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-12T01:22:20.723603129Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-12T01:22:20.723605489Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-12T01:22:20.72361786Z   severity_local: 'ERROR',
+2026-01-12T01:22:20.72362052Z   severity: 'ERROR',
+2026-01-12T01:22:20.72362288Z   code: '42703',
+2026-01-12T01:22:20.7236252Z   position: '22',
+2026-01-12T01:22:20.72362737Z   file: 'parse_relation.c',
+2026-01-12T01:22:20.72362975Z   line: '3722',
+2026-01-12T01:22:20.72363198Z   routine: 'errorMissingColumn'
+2026-01-12T01:22:20.7236343Z }
+2026-01-12T01:22:20.791711366Z 1:22:20 AM [express] GET /api/games/all 500 in 204ms :: {"message":"Failed to fetch games"}
+2026-01-12T01:22:20.861883071Z 1:22:20 AM [express] GET /api/settings/maintenance-mode 304 in 272ms :: {"enabled":false}
+2026-01-12T01:22:21.187648156Z 1:22:21 AM [express] GET /api/news 304 in 596ms :: []
+2026-01-12T01:22:21.250909372Z 1:22:21 AM [express] GET /api/user/preferences 304 in 656ms :: {}
+2026-01-12T01:22:21.837104319Z 1:22:21 AM [express] GET /api/auth/user 304 in 1232ms :: {"id":"user_popfork1","username":"popfork1"…
+2026-01-12T01:22:22.139516526Z Error fetching current week games: PostgresError: column "season" does not exist
+2026-01-12T01:22:22.139537397Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-12T01:22:22.139541387Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-12T01:22:22.139543927Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-12T01:22:22.139547087Z     at TLSSocket.emit (node:events:518:28)
+2026-01-12T01:22:22.139549877Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-12T01:22:22.139552197Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-12T01:22:22.139554537Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-12T01:22:22.139556838Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-12T01:22:22.139559678Z   severity_local: 'ERROR',
+2026-01-12T01:22:22.139562438Z   severity: 'ERROR',
+2026-01-12T01:22:22.139564578Z   code: '42703',
+2026-01-12T01:22:22.139566648Z   position: '22',
+2026-01-12T01:22:22.139568788Z   file: 'parse_relation.c',
+2026-01-12T01:22:22.139571078Z   line: '3722',
+2026-01-12T01:22:22.139573338Z   routine: 'errorMissingColumn'
+2026-01-12T01:22:22.139575358Z }
+2026-01-12T01:22:22.205462774Z 1:22:22 AM [express] GET /api/games/current 500 in 195ms :: {"message":"Failed to fetch games"}
+2026-01-12T01:22:22.517025322Z 1:22:22 AM [express] GET /api/settings/breaking-news 304 in 516ms :: {"message":"","active":false,"e…
+2026-01-12T01:22:28.352341141Z Error fetching all games: PostgresError: column "season" does not exist
+2026-01-12T01:22:28.352366031Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-12T01:22:28.352372991Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-12T01:22:28.352379431Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-12T01:22:28.352384802Z     at TLSSocket.emit (node:events:518:28)
+2026-01-12T01:22:28.352391192Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-12T01:22:28.352396812Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-12T01:22:28.352402312Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-12T01:22:28.352407712Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-12T01:22:28.352412922Z   severity_local: 'ERROR',
+2026-01-12T01:22:28.352417422Z   severity: 'ERROR',
+2026-01-12T01:22:28.352421062Z   code: '42703',
+2026-01-12T01:22:28.352443803Z   position: '22',
+2026-01-12T01:22:28.352446153Z   file: 'parse_relation.c',
+2026-01-12T01:22:28.352448613Z   line: '3722',
+2026-01-12T01:22:28.352450803Z   routine: 'errorMissingColumn'
+2026-01-12T01:22:28.352452933Z }
+2026-01-12T01:22:28.418232757Z 1:22:28 AM [express] GET /api/games/all 500 in 194ms :: {"message":"Failed to fetch games"}
+2026-01-12T01:22:32.989936742Z Error creating game: PostgresError: column "season" of relation "games" does not exist
+2026-01-12T01:22:32.989973553Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-12T01:22:32.989978223Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-12T01:22:32.989981973Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-12T01:22:32.989986084Z     at TLSSocket.emit (node:events:518:28)
+2026-01-12T01:22:32.989990284Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-12T01:22:32.989994334Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-12T01:22:32.989997894Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-12T01:22:32.990001494Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-12T01:22:32.990005644Z   severity_local: 'ERROR',
+2026-01-12T01:22:32.990009704Z   severity: 'ERROR',
+2026-01-12T01:22:32.990013114Z   code: '42703',
+2026-01-12T01:22:32.990016724Z   position: '36',
+2026-01-12T01:22:32.990020124Z   file: 'parse_target.c',
+2026-01-12T01:22:32.990023584Z   line: '1066',
+2026-01-12T01:22:32.990026934Z   routine: 'checkInsertTargets'
+2026-01-12T01:22:32.990030554Z }
+2026-01-12T01:22:33.060553137Z 1:22:33 AM [express] POST /api/games 400 in 201ms :: {"message":"Failed to create game"}
+2026-01-12T01:22:33.153216089Z 1:22:33 AM [express] GET /api/settings/breaking-news 304 in 516ms :: {"message":"","active":false,"e…
