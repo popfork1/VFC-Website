@@ -1,0 +1,155 @@
+Good news: this is a **very common Postgres + Drizzle + postgres.js error**, and your stack trace tells us exactly what’s happening.
+
+---
+
+## ❌ What the error actually means
+
+```
+Error: UNDEFINED_VALUE: Undefined values are not allowed
+```
+
+This **does NOT mean your SQL is wrong**.
+
+It means **you are passing `undefined` into a SQL query** somewhere — and `postgres` (the driver you’re using in `migrate-production.ts`) **hard-crashes when any value is `undefined`**.
+
+Postgres allows `NULL`, **not `undefined`**.
+
+---
+
+## 🎯 Where this is almost certainly coming from
+
+Based on the code you sent, there are **3 very likely causes** (ranked from most to least likely):
+
+---
+
+## ✅ 1. `setMaintenanceMode` → `updatedAt: new Date()` (MOST LIKELY)
+
+In my earlier helper I gave you this:
+
+```ts
+.onConflictDoUpdate({
+  target: settings.key,
+  set: {
+    value: String(enabled),
+    updatedAt: new Date(),
+  },
+});
+```
+
+### ❌ Problem
+
+Your `settings` table **already has**:
+
+```ts
+updatedAt: timestamp("updated_at").defaultNow(),
+```
+
+Drizzle **sometimes passes `undefined`** internally when updating optional fields like this — which triggers this exact crash.
+
+### ✅ FIX (SAFE + CLEAN)
+
+**Remove `updatedAt` entirely** from the update:
+
+```ts
+.onConflictDoUpdate({
+  target: settings.key,
+  set: {
+    value: String(enabled),
+  },
+});
+```
+
+Postgres will automatically handle the timestamp default.
+
+---
+
+## ✅ 2. Missing `DATABASE_URL` on Render (VERY COMMON)
+
+Your production file:
+
+```ts
+const connectionString = process.env.DATABASE_URL;
+```
+
+If this is **undefined**, postgres.js still tries to run → boom.
+
+### ✅ QUICK CHECK
+
+Add this temporarily:
+
+```ts
+console.log("DATABASE_URL exists:", Boolean(process.env.DATABASE_URL));
+```
+
+If it logs `false`, you need to set it in **Render → Environment Variables**.
+
+---
+
+## ✅ 3. One of your inserts is passing `undefined` fields
+
+Example that will crash:
+
+```ts
+await sql`
+  INSERT INTO settings (key, value)
+  VALUES (${key}, ${value})
+`;
+```
+
+If **either `key` or `value` is undefined**, this error happens.
+
+### ✅ Defensive fix (recommended)
+
+Before inserting:
+
+```ts
+if (typeof key !== "string" || typeof value !== "string") {
+  throw new Error("Invalid settings insert");
+}
+```
+
+---
+
+## 🔧 FINAL PATCH (DO THIS NOW)
+
+### ✅ Update `setMaintenanceMode` (THIS WILL FIX IT)
+
+```ts
+export async function setMaintenanceMode(enabled: boolean) {
+  await db
+    .insert(settings)
+    .values({
+      key: APP_SETTINGS.MAINTENANCE_MODE,
+      value: String(enabled),
+    })
+    .onConflictDoUpdate({
+      target: settings.key,
+      set: {
+        value: String(enabled),
+      },
+    });
+}
+```
+
+---
+
+## 🧠 Why this error is confusing (but now you know)
+
+• Drizzle **does not warn you**
+• postgres.js **crashes instead of logging**
+• Stack trace points to internals
+• Looks scary but is actually simple
+
+Once you eliminate **every possible `undefined`**, the error disappears instantly.
+
+---
+
+## ✅ If it STILL errors after this
+
+Tell me:
+
+1. **Which file is crashing** (API route, migration, server start)
+2. **What action triggers it** (server boot, POST request, migration)
+3. Whether this is **local or Render**
+
+I’ll pinpoint the exact line in under one message.
