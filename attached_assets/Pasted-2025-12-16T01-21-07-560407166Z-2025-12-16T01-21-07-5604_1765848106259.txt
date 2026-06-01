@@ -1,0 +1,89 @@
+2025-12-16T01:21:07.560407166Z {
+2025-12-16T01:21:07.560415977Z   severity_local: 'NOTICE',
+2025-12-16T01:21:07.560417677Z   severity: 'NOTICE',
+2025-12-16T01:21:07.560419677Z   code: '42P07',
+2025-12-16T01:21:07.560421987Z   message: 'relation "stream_requests" already exists, skipping',
+2025-12-16T01:21:07.560423547Z   file: 'parse_utilcmd.c',
+2025-12-16T01:21:07.560425247Z   line: '208',
+2025-12-16T01:21:07.560426777Z   routine: 'transformCreateStmt'
+2025-12-16T01:21:07.560428467Z }
+2025-12-16T01:21:07.561831315Z {
+2025-12-16T01:21:07.561863447Z   severity_local: 'NOTICE',
+2025-12-16T01:21:07.561867517Z   severity: 'NOTICE',
+2025-12-16T01:21:07.561869947Z   code: '42P07',
+2025-12-16T01:21:07.561872957Z   message: 'relation "settings" already exists, skipping',
+2025-12-16T01:21:07.561875798Z   file: 'parse_utilcmd.c',
+2025-12-16T01:21:07.561878298Z   line: '208',
+2025-12-16T01:21:07.561899979Z   routine: 'transformCreateStmt'
+2025-12-16T01:21:07.561902929Z }
+2025-12-16T01:21:07.562013255Z Database schema initialized successfully
+2025-12-16T01:21:07.836776807Z 1:21:07 AM [express] serving on port 10000
+2025-12-16T01:21:12.761088577Z ==> Your service is live 🎉
+2025-12-16T01:21:12.793211644Z ==> 
+2025-12-16T01:21:12.821322392Z ==> ///////////////////////////////////////////////////////////
+2025-12-16T01:21:12.855397849Z ==> 
+2025-12-16T01:21:12.884464077Z ==> Available at your primary URL https://urfl-fan-network.onrender.com
+2025-12-16T01:21:12.916985315Z ==> 
+2025-12-16T01:21:12.948628272Z ==> ///////////////////////////////////////////////////////////
+2025-12-16T01:21:16.664988183Z Error fetching user preferences: PostgresError: relation "user_preferences" does not exist
+2025-12-16T01:21:16.665037596Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-16T01:21:16.665041636Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-16T01:21:16.665045216Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-16T01:21:16.665049586Z     at Socket.emit (node:events:518:28)
+2025-12-16T01:21:16.665054097Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-16T01:21:16.665058997Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-16T01:21:16.665062397Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-16T01:21:16.665066027Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-16T01:21:16.665070418Z   severity_local: 'ERROR',
+2025-12-16T01:21:16.665078548Z   severity: 'ERROR',
+2025-12-16T01:21:16.665082128Z   code: '42P01',
+2025-12-16T01:21:16.665085619Z   position: '221',
+2025-12-16T01:21:16.665089129Z   file: 'parse_relation.c',
+2025-12-16T01:21:16.665092639Z   line: '1466',
+2025-12-16T01:21:16.665096249Z   routine: 'parserOpenTable'
+2025-12-16T01:21:16.665099949Z }
+2025-12-16T01:21:16.735134484Z 1:21:16 AM [express] GET /api/user/preferences 500 in 77ms :: {"message":"Failed to fetch preference…
+2025-12-16T01:21:16.8277813Z 1:21:16 AM [express] GET /api/auth/user 304 in 157ms :: {"id":"user_popfork1","email":"popfork1@urfl…
+2025-12-16T01:21:16.828776085Z 1:21:16 AM [express] GET /api/games/all 304 in 170ms :: [{"id":"e6ea0f31-8f0a-4407-902e-69925d28c152…
+2025-12-16T01:21:16.831818093Z 1:21:16 AM [express] GET /api/news 304 in 168ms :: [{"id":"5aec1c96-d413-4370-b809-abb9dd67bf16","ti…
+2025-12-16T01:21:16.927636595Z 1:21:16 AM [express] GET /api/settings/maintenance-mode 304 in 199ms :: {"enabled":true}
+2025-12-16T01:21:17.037270361Z 1:21:17 AM [express] GET /api/games/current 304 in 9ms :: [{"id":"82083cca-544d-4ac7-867a-a407b915a0…
+2025-12-16T01:21:28.813885908Z Error fetching partners: PostgresError: relation "partners" does not exist
+2025-12-16T01:21:28.81392003Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-16T01:21:28.81392554Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-16T01:21:28.81392987Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-16T01:21:28.81393633Z     at Socket.emit (node:events:518:28)
+2025-12-16T01:21:28.813941141Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-16T01:21:28.813945801Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-16T01:21:28.813950681Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-16T01:21:28.813955292Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-16T01:21:28.813960362Z   severity_local: 'ERROR',
+2025-12-16T01:21:28.813965772Z   severity: 'ERROR',
+2025-12-16T01:21:28.813969962Z   code: '42P01',
+2025-12-16T01:21:28.813974333Z   position: '76',
+2025-12-16T01:21:28.813978483Z   file: 'parse_relation.c',
+2025-12-16T01:21:28.813982173Z   line: '1466',
+2025-12-16T01:21:28.813985203Z   routine: 'parserOpenTable'
+2025-12-16T01:21:28.814003144Z }
+2025-12-16T01:21:28.817335778Z 1:21:28 AM [express] GET /api/partners 500 in 18ms :: {"message":"Failed to fetch partners"}
+2025-12-16T01:21:29.94501202Z 1:21:29 AM [express] GET /api/pickems/rules 200 in 14ms
+2025-12-16T01:21:29.96036832Z 1:21:29 AM [express] GET /api/pickems 304 in 7ms :: []
+2025-12-16T01:21:31.145778037Z 1:21:31 AM [express] GET /api/games/week/1 304 in 11ms :: [{"id":"5d70200d-6939-42ee-b1d9-fb68923a05…
+2025-12-16T01:21:34.457514899Z Error updating user preferences: PostgresError: relation "user_preferences" does not exist
+2025-12-16T01:21:34.457545851Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-16T01:21:34.457549561Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-16T01:21:34.457552181Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-16T01:21:34.457588233Z     at Socket.emit (node:events:518:28)
+2025-12-16T01:21:34.457596184Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-16T01:21:34.457600144Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-16T01:21:34.457601804Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-16T01:21:34.457603414Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-16T01:21:34.457605684Z   severity_local: 'ERROR',
+2025-12-16T01:21:34.457607785Z   severity: 'ERROR',
+2025-12-16T01:21:34.457609405Z   code: '42P01',
+2025-12-16T01:21:34.457610945Z   position: '221',
+2025-12-16T01:21:34.457612495Z   file: 'parse_relation.c',
+2025-12-16T01:21:34.457614015Z   line: '1466',
+2025-12-16T01:21:34.457615525Z   routine: 'parserOpenTable'
+2025-12-16T01:21:34.457617045Z }
+2025-12-16T01:21:34.460741808Z 1:21:34 AM [express] POST /api/user/preferences 400 in 8ms :: {"message":"Failed to update preferenc…
