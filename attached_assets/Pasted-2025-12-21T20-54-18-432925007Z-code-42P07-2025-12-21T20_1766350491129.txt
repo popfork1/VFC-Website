@@ -1,0 +1,50 @@
+2025-12-21T20:54:18.432925007Z   code: '42P07',
+2025-12-21T20:54:18.432928687Z   message: 'relation "partners" already exists, skipping',
+2025-12-21T20:54:18.432931378Z   file: 'parse_utilcmd.c',
+2025-12-21T20:54:18.432934047Z   line: '208',
+2025-12-21T20:54:18.432936618Z   routine: 'transformCreateStmt'
+2025-12-21T20:54:18.432939098Z }
+2025-12-21T20:54:18.434470217Z {
+2025-12-21T20:54:18.434481057Z   severity_local: 'NOTICE',
+2025-12-21T20:54:18.434484787Z   severity: 'NOTICE',
+2025-12-21T20:54:18.434487647Z   code: '42P07',
+2025-12-21T20:54:18.434490658Z   message: 'relation "user_preferences" already exists, skipping',
+2025-12-21T20:54:18.434493467Z   file: 'parse_utilcmd.c',
+2025-12-21T20:54:18.434496368Z   line: '208',
+2025-12-21T20:54:18.434498988Z   routine: 'transformCreateStmt'
+2025-12-21T20:54:18.434501758Z }
+2025-12-21T20:54:18.435862163Z {
+2025-12-21T20:54:18.435875223Z   severity_local: 'NOTICE',
+2025-12-21T20:54:18.435878533Z   severity: 'NOTICE',
+2025-12-21T20:54:18.435881613Z   code: '42P07',
+2025-12-21T20:54:18.435885033Z   message: 'relation "update_plans" already exists, skipping',
+2025-12-21T20:54:18.435887643Z   file: 'parse_utilcmd.c',
+2025-12-21T20:54:18.435890303Z   line: '208',
+2025-12-21T20:54:18.435892763Z   routine: 'transformCreateStmt'
+2025-12-21T20:54:18.435895464Z }
+2025-12-21T20:54:18.435965645Z Database schema initialized successfully
+2025-12-21T20:54:18.734544114Z 8:54:18 PM [express] serving on port 10000
+2025-12-21T20:54:38.457882987Z 8:54:38 PM [express] GET /api/news 304 in 17ms :: []
+2025-12-21T20:54:38.619902008Z node:internal/process/promises:394
+2025-12-21T20:54:38.619929789Z     triggerUncaughtException(err, true /* fromPromise */);
+2025-12-21T20:54:38.619935299Z     ^
+2025-12-21T20:54:38.619939169Z 
+2025-12-21T20:54:38.619943719Z PostgresError: column "has_completed_tour" does not exist
+2025-12-21T20:54:38.61994859Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-21T20:54:38.6199545Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-21T20:54:38.6199588Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-21T20:54:38.61996331Z     at Socket.emit (node:events:518:28)
+2025-12-21T20:54:38.61996775Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-21T20:54:38.61997248Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-21T20:54:38.61997703Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-21T20:54:38.6199801Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-21T20:54:38.619983391Z   severity_local: 'ERROR',
+2025-12-21T20:54:38.619986431Z   severity: 'ERROR',
+2025-12-21T20:54:38.619989221Z   code: '42703',
+2025-12-21T20:54:38.619992031Z   position: '95',
+2025-12-21T20:54:38.619994911Z   file: 'parse_relation.c',
+2025-12-21T20:54:38.619997971Z   line: '3822',
+2025-12-21T20:54:38.620002631Z   routine: 'errorMissingColumn'
+2025-12-21T20:54:38.620030732Z }
+2025-12-21T20:54:38.620038512Z 
+2025-12-21T20:54:38.620042872Z Node.js v22.16.0
