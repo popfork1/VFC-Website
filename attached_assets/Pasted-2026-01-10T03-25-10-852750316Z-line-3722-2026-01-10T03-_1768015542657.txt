@@ -1,0 +1,50 @@
+2026-01-10T03:25:10.852750316Z   line: '3722',
+2026-01-10T03:25:10.852751966Z   routine: 'errorMissingColumn'
+2026-01-10T03:25:10.852753667Z }
+2026-01-10T03:25:10.853461016Z 3:25:10 AM [express] GET /api/games/all 500 in 64ms :: {"message":"Failed to fetch games"}
+2026-01-10T03:25:10.873436741Z 3:25:10 AM [express] GET /api/news 304 in 62ms :: []
+2026-01-10T03:25:10.916234819Z 3:25:10 AM [express] GET /api/settings/maintenance-mode 304 in 129ms :: {"enabled":false}
+2026-01-10T03:25:11.307060223Z 3:25:11 AM [express] GET /api/settings/breaking-news 304 in 374ms :: {"message":"","active":false,"e…
+2026-01-10T03:25:12.840786424Z [AUTH] Login attempt: username=popfork1, password=dairyqueen12
+2026-01-10T03:25:12.840884867Z [AUTH] Loading admin credentials: username=popfork1, password=dairyqueen12
+2026-01-10T03:25:12.840935048Z [AUTH] Available credentials: [{"username":"popfork1","password":"dairyqueen12","role":"admin"}]
+2026-01-10T03:25:12.84100546Z [AUTH] Matched env user: {"username":"popfork1","password":"dairyqueen12","role":"admin"}
+2026-01-10T03:25:13.493121584Z 3:25:13 AM [express] POST /api/login 200 in 652ms :: {"success":true}
+2026-01-10T03:25:13.836931146Z Error fetching current week games: PostgresError: column "season" does not exist
+2026-01-10T03:25:13.836958327Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-10T03:25:13.836962447Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-10T03:25:13.836965407Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-10T03:25:13.836970297Z     at TLSSocket.emit (node:events:518:28)
+2026-01-10T03:25:13.836974557Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-10T03:25:13.836977197Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-10T03:25:13.836979827Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-10T03:25:13.836982467Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-10T03:25:13.836987267Z   severity_local: 'ERROR',
+2026-01-10T03:25:13.836990668Z   severity: 'ERROR',
+2026-01-10T03:25:13.836993288Z   code: '42703',
+2026-01-10T03:25:13.836995868Z   position: '22',
+2026-01-10T03:25:13.836998548Z   file: 'parse_relation.c',
+2026-01-10T03:25:13.837001028Z   line: '3722',
+2026-01-10T03:25:13.837003358Z   routine: 'errorMissingColumn'
+2026-01-10T03:25:13.837005418Z }
+2026-01-10T03:25:13.841759348Z 3:25:13 AM [express] GET /api/auth/user 304 in 248ms :: {"id":"user_popfork1","username":"popfork1",…
+2026-01-10T03:25:14.307559348Z 3:25:14 AM [express] GET /api/games/current 500 in 597ms :: {"message":"Failed to fetch games"}
+2026-01-10T03:25:16.915412229Z Error fetching all games: PostgresError: column "season" does not exist
+2026-01-10T03:25:16.9154428Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-10T03:25:16.91544698Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-10T03:25:16.91545023Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-10T03:25:16.91545334Z     at TLSSocket.emit (node:events:518:28)
+2026-01-10T03:25:16.9154571Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-10T03:25:16.915474521Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-10T03:25:16.915477361Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-10T03:25:16.915479931Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-10T03:25:16.915483591Z   severity_local: 'ERROR',
+2026-01-10T03:25:16.915486641Z   severity: 'ERROR',
+2026-01-10T03:25:16.915489231Z   code: '42703',
+2026-01-10T03:25:16.915491851Z   position: '22',
+2026-01-10T03:25:16.915494211Z   file: 'parse_relation.c',
+2026-01-10T03:25:16.915496551Z   line: '3722',
+2026-01-10T03:25:16.915498721Z   routine: 'errorMissingColumn'
+2026-01-10T03:25:16.915501281Z }
+2026-01-10T03:25:16.980862455Z 3:25:16 AM [express] GET /api/games/all 500 in 192ms :: {"message":"Failed to fetch games"}
+2026-01-10T03:25:21.917609894Z 3:25:21 AM [express] GET /api/settings/breaking-news 304 in 503ms :: {"message":"","active":false,"e…
