@@ -1,0 +1,50 @@
+2026-01-10T03:34:35.065948652Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-10T03:34:35.065952302Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-10T03:34:35.065955802Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-10T03:34:35.065960272Z   severity_local: 'ERROR',
+2026-01-10T03:34:35.065964223Z   severity: 'ERROR',
+2026-01-10T03:34:35.065967692Z   code: '42703',
+2026-01-10T03:34:35.065971033Z   position: '22',
+2026-01-10T03:34:35.065974743Z   file: 'parse_relation.c',
+2026-01-10T03:34:35.065978173Z   line: '3722',
+2026-01-10T03:34:35.065982073Z   routine: 'errorMissingColumn'
+2026-01-10T03:34:35.065985583Z }
+2026-01-10T03:34:35.137091234Z 3:34:35 AM [express] GET /api/games/current 500 in 206ms :: {"message":"Failed to fetch games"}
+2026-01-10T03:34:35.434343513Z 3:34:35 AM [express] GET /api/settings/breaking-news 304 in 527ms :: {"message":"","active":false,"e…
+2026-01-10T03:34:40.16302551Z Error fetching all games: PostgresError: column "season" does not exist
+2026-01-10T03:34:40.163051881Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-10T03:34:40.163055411Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-10T03:34:40.163058171Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-10T03:34:40.163061781Z     at TLSSocket.emit (node:events:518:28)
+2026-01-10T03:34:40.163064641Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-10T03:34:40.163066801Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-10T03:34:40.163069021Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-10T03:34:40.163071181Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-10T03:34:40.163074051Z   severity_local: 'ERROR',
+2026-01-10T03:34:40.163076871Z   severity: 'ERROR',
+2026-01-10T03:34:40.163093042Z   code: '42703',
+2026-01-10T03:34:40.163095522Z   position: '22',
+2026-01-10T03:34:40.163097682Z   file: 'parse_relation.c',
+2026-01-10T03:34:40.163100012Z   line: '3722',
+2026-01-10T03:34:40.163102132Z   routine: 'errorMissingColumn'
+2026-01-10T03:34:40.163104232Z }
+2026-01-10T03:34:40.234655761Z 3:34:40 AM [express] GET /api/games/all 500 in 203ms :: {"message":"Failed to fetch games"}
+2026-01-10T03:34:44.029408188Z Error creating game: PostgresError: column "season" of relation "games" does not exist
+2026-01-10T03:34:44.029471109Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-10T03:34:44.02948055Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-10T03:34:44.02948483Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-10T03:34:44.02949021Z     at TLSSocket.emit (node:events:518:28)
+2026-01-10T03:34:44.02949568Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-10T03:34:44.02950109Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-10T03:34:44.02950466Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-10T03:34:44.02950846Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-10T03:34:44.02951387Z   severity_local: 'ERROR',
+2026-01-10T03:34:44.02951793Z   severity: 'ERROR',
+2026-01-10T03:34:44.02952019Z   code: '42703',
+2026-01-10T03:34:44.02952252Z   position: '36',
+2026-01-10T03:34:44.02952479Z   file: 'parse_target.c',
+2026-01-10T03:34:44.02952702Z   line: '1066',
+2026-01-10T03:34:44.02952925Z   routine: 'checkInsertTargets'
+2026-01-10T03:34:44.029531471Z }
+2026-01-10T03:34:44.101151621Z 3:34:44 AM [express] POST /api/games 400 in 214ms :: {"message":"Failed to create game"}
+2026-01-10T03:34:46.075279004Z 3:34:46 AM [express] GET /api/settings/breaking-news 304 in 529ms :: {"message":"","active":false,"e…
