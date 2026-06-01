@@ -1,0 +1,50 @@
+2025-12-15T23:43:04.79134996Z     at Socket.emit (node:events:518:28)
+2025-12-15T23:43:04.79135274Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-15T23:43:04.79135498Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-15T23:43:04.79135707Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-15T23:43:04.7913593Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-15T23:43:04.79136208Z   severity_local: 'ERROR',
+2025-12-15T23:43:04.79136467Z   severity: 'ERROR',
+2025-12-15T23:43:04.7913668Z   code: '42P01',
+2025-12-15T23:43:04.79136899Z   position: '76',
+2025-12-15T23:43:04.79137366Z   file: 'parse_relation.c',
+2025-12-15T23:43:04.79137589Z   line: '1466',
+2025-12-15T23:43:04.79137807Z   routine: 'parserOpenTable'
+2025-12-15T23:43:04.791394281Z }
+2025-12-15T23:43:04.795360123Z 11:43:04 PM [express] GET /api/partners 500 in 8ms :: {"message":"Failed to fetch partners"}
+2025-12-15T23:43:08.936517699Z Error updating user preferences: PostgresError: relation "user_preferences" does not exist
+2025-12-15T23:43:08.93656846Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-15T23:43:08.936573391Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-15T23:43:08.936576671Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-15T23:43:08.936580371Z     at Socket.emit (node:events:518:28)
+2025-12-15T23:43:08.936583751Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-15T23:43:08.936587501Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-15T23:43:08.936590461Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-15T23:43:08.936593121Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-15T23:43:08.936596341Z   severity_local: 'ERROR',
+2025-12-15T23:43:08.936599732Z   severity: 'ERROR',
+2025-12-15T23:43:08.936602501Z   code: '42P01',
+2025-12-15T23:43:08.936604872Z   position: '221',
+2025-12-15T23:43:08.936607522Z   file: 'parse_relation.c',
+2025-12-15T23:43:08.936610082Z   line: '1466',
+2025-12-15T23:43:08.936657843Z   routine: 'parserOpenTable'
+2025-12-15T23:43:08.936661903Z }
+2025-12-15T23:43:08.941750997Z 11:43:08 PM [express] POST /api/user/preferences 400 in 43ms :: {"message":"Failed to update preferen…
+2025-12-15T23:43:10.207848662Z Error updating user preferences: PostgresError: relation "user_preferences" does not exist
+2025-12-15T23:43:10.207874653Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-15T23:43:10.207877453Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-15T23:43:10.207879743Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-15T23:43:10.207882873Z     at Socket.emit (node:events:518:28)
+2025-12-15T23:43:10.207885554Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-15T23:43:10.207888294Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-15T23:43:10.207890794Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-15T23:43:10.207893034Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-15T23:43:10.207895794Z   severity_local: 'ERROR',
+2025-12-15T23:43:10.207898474Z   severity: 'ERROR',
+2025-12-15T23:43:10.207900624Z   code: '42P01',
+2025-12-15T23:43:10.207902764Z   position: '221',
+2025-12-15T23:43:10.207904854Z   file: 'parse_relation.c',
+2025-12-15T23:43:10.207907834Z   line: '1466',
+2025-12-15T23:43:10.207911424Z   routine: 'parserOpenTable'
+2025-12-15T23:43:10.207915054Z }
+2025-12-15T23:43:10.21094711Z 11:43:10 PM [express] POST /api/user/preferences 400 in 8ms :: {"message":"Failed to update preferenc…
