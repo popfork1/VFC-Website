@@ -1,0 +1,52 @@
+2026-01-12T01:40:01.871330046Z   severity_local: 'ERROR',
+2026-01-12T01:40:01.871333896Z   severity: 'ERROR',
+2026-01-12T01:40:01.871335616Z   code: '42703',
+2026-01-12T01:40:01.871337476Z   position: '22',
+2026-01-12T01:40:01.871339126Z   file: 'parse_relation.c',
+2026-01-12T01:40:01.871340856Z   line: '3722',
+2026-01-12T01:40:01.871342506Z   routine: 'errorMissingColumn'
+2026-01-12T01:40:01.871344196Z }
+2026-01-12T01:40:01.939349215Z 1:40:01 AM [express] GET /api/games/all 500 in 209ms :: {"message":"Failed to fetch games"}
+2026-01-12T01:40:01.986266915Z 1:40:01 AM [express] GET /api/settings/maintenance-mode 304 in 258ms :: {"enabled":false}
+2026-01-12T01:40:02.152179403Z 1:40:02 AM [express] GET /api/news 304 in 578ms :: []
+2026-01-12T01:40:02.189432743Z 1:40:02 AM [express] GET /api/auth/user 304 in 643ms :: {"id":"user_popfork1","username":"popfork1",…
+2026-01-12T01:40:02.195468855Z 1:40:02 AM [express] GET /api/user/preferences 304 in 652ms :: {}
+2026-01-12T01:40:02.49969527Z Error fetching current week games: PostgresError: column "season" does not exist
+2026-01-12T01:40:02.49971382Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-12T01:40:02.49971736Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-12T01:40:02.499719751Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-12T01:40:02.499724871Z     at TLSSocket.emit (node:events:518:28)
+2026-01-12T01:40:02.499728451Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-12T01:40:02.499730991Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-12T01:40:02.499733341Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-12T01:40:02.499735601Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-12T01:40:02.499738471Z   severity_local: 'ERROR',
+2026-01-12T01:40:02.499741321Z   severity: 'ERROR',
+2026-01-12T01:40:02.499743621Z   code: '42703',
+2026-01-12T01:40:02.499745981Z   position: '22',
+2026-01-12T01:40:02.499748221Z   file: 'parse_relation.c',
+2026-01-12T01:40:02.499750531Z   line: '3722',
+2026-01-12T01:40:02.499752771Z   routine: 'errorMissingColumn'
+2026-01-12T01:40:02.499755011Z }
+2026-01-12T01:40:02.563250762Z 1:40:02 AM [express] GET /api/games/current 500 in 193ms :: {"message":"Failed to fetch games"}
+2026-01-12T01:40:02.888337871Z 1:40:02 AM [express] GET /api/settings/breaking-news 304 in 510ms :: {"message":"","active":false,"e…
+2026-01-12T01:40:03.292895559Z Error fetching all games: PostgresError: column "season" does not exist
+2026-01-12T01:40:03.292912899Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-12T01:40:03.292916309Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-12T01:40:03.292918739Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-12T01:40:03.292921999Z     at TLSSocket.emit (node:events:518:28)
+2026-01-12T01:40:03.292924759Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-12T01:40:03.292926949Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-12T01:40:03.292929059Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-12T01:40:03.292931259Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-12T01:40:03.292933689Z   severity_local: 'ERROR',
+2026-01-12T01:40:03.292936369Z   severity: 'ERROR',
+2026-01-12T01:40:03.29294936Z   code: '42703',
+2026-01-12T01:40:03.29295189Z   position: '22',
+2026-01-12T01:40:03.29295408Z   file: 'parse_relation.c',
+2026-01-12T01:40:03.29295658Z   line: '3722',
+2026-01-12T01:40:03.29295876Z   routine: 'errorMissingColumn'
+2026-01-12T01:40:03.29296094Z }
+2026-01-12T01:40:03.357061814Z 1:40:03 AM [express] GET /api/games/all 500 in 192ms :: {"message":"Failed to fetch games"}
+2026-01-12T01:44:08.395949896Z ==> Detected service running on port 10000
+2026-01-12T01:44:08.474345Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
