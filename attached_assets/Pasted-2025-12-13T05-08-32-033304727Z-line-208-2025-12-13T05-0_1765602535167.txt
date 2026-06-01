@@ -1,0 +1,50 @@
+2025-12-13T05:08:32.033304727Z   line: '208',
+2025-12-13T05:08:32.033306437Z   routine: 'transformCreateStmt'
+2025-12-13T05:08:32.033308367Z }
+2025-12-13T05:08:32.034937961Z {
+2025-12-13T05:08:32.034949411Z   severity_local: 'NOTICE',
+2025-12-13T05:08:32.034952451Z   severity: 'NOTICE',
+2025-12-13T05:08:32.034954822Z   code: '42P07',
+2025-12-13T05:08:32.034957402Z   message: 'relation "changelogs" already exists, skipping',
+2025-12-13T05:08:32.034959742Z   file: 'parse_utilcmd.c',
+2025-12-13T05:08:32.034961972Z   line: '208',
+2025-12-13T05:08:32.034964322Z   routine: 'transformCreateStmt'
+2025-12-13T05:08:32.034966522Z }
+2025-12-13T05:08:32.035990064Z {
+2025-12-13T05:08:32.036001794Z   severity_local: 'NOTICE',
+2025-12-13T05:08:32.036004944Z   severity: 'NOTICE',
+2025-12-13T05:08:32.036007874Z   code: '42P07',
+2025-12-13T05:08:32.036011454Z   message: 'relation "predictions" already exists, skipping',
+2025-12-13T05:08:32.036013974Z   file: 'parse_utilcmd.c',
+2025-12-13T05:08:32.036016234Z   line: '208',
+2025-12-13T05:08:32.036018664Z   routine: 'transformCreateStmt'
+2025-12-13T05:08:32.036021434Z }
+2025-12-13T05:08:32.037428754Z {
+2025-12-13T05:08:32.037437634Z   severity_local: 'NOTICE',
+2025-12-13T05:08:32.037440344Z   severity: 'NOTICE',
+2025-12-13T05:08:32.037442884Z   code: '42P07',
+2025-12-13T05:08:32.037445354Z   message: 'relation "bracket_images" already exists, skipping',
+2025-12-13T05:08:32.037447674Z   file: 'parse_utilcmd.c',
+2025-12-13T05:08:32.037449984Z   line: '208',
+2025-12-13T05:08:32.037452164Z   routine: 'transformCreateStmt'
+2025-12-13T05:08:32.037454355Z }
+2025-12-13T05:08:32.038693451Z {
+2025-12-13T05:08:32.038701481Z   severity_local: 'NOTICE',
+2025-12-13T05:08:32.038704181Z   severity: 'NOTICE',
+2025-12-13T05:08:32.038706511Z   code: '42P07',
+2025-12-13T05:08:32.038709011Z   message: 'relation "stream_requests" already exists, skipping',
+2025-12-13T05:08:32.038711151Z   file: 'parse_utilcmd.c',
+2025-12-13T05:08:32.038713561Z   line: '208',
+2025-12-13T05:08:32.038715701Z   routine: 'transformCreateStmt'
+2025-12-13T05:08:32.038717911Z }
+2025-12-13T05:08:32.039987088Z {
+2025-12-13T05:08:32.039998449Z   severity_local: 'NOTICE',
+2025-12-13T05:08:32.040001578Z   severity: 'NOTICE',
+2025-12-13T05:08:32.040004739Z   code: '42P07',
+2025-12-13T05:08:32.040007519Z   message: 'relation "settings" already exists, skipping',
+2025-12-13T05:08:32.040010219Z   file: 'parse_utilcmd.c',
+2025-12-13T05:08:32.040012759Z   line: '208',
+2025-12-13T05:08:32.040024179Z   routine: 'transformCreateStmt'
+2025-12-13T05:08:32.040027109Z }
+2025-12-13T05:08:32.040129131Z Database schema initialized successfully
+2025-12-13T05:08:32.336599334Z 5:08:32 AM [express] serving on port 10000
