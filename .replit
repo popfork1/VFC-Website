@@ -1,0 +1,57 @@
+modules = ["nodejs-20", "web", "bash", "postgresql-16"]
+run = "npm run dev"
+hidden = [".config", ".git", "generated-icon.png", "node_modules", "dist"]
+
+[nix]
+channel = "stable-25_05"
+
+[deployment]
+deploymentTarget = "autoscale"
+build = ["npm", "run", "build"]
+run = ["node", "./dist/index.cjs"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[env]
+PORT = "5000"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "NODE_ENV=development node_modules/.bin/tsx server/index-dev.ts"
+waitForPort = 5000
+
+[agent]
+integrations = ["javascript_websocket:1.0.0", "javascript_log_in_with_replit:1.0.0", "javascript_database:1.0.0"]
+expertMode = true
+stack = "FULLSTACK_JS"
+
+[userenv]
+
+[userenv.shared]
+VITE_HMR_HOST = ""
+VITE_HMR_PROTOCOL = "wss"
+
+[postMerge]
+path = "scripts/post-merge.sh"
+timeoutMs = 20000
