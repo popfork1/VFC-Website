@@ -1,0 +1,51 @@
+2025-12-23T21:30:24.358268819Z ==> ///////////////////////////////////////////////////////////
+2025-12-23T21:30:34.246037081Z 9:30:34 PM [express] GET /api/games/all 304 in 16ms :: [{"id":"959a29aa-9e7d-4a25-82ee-2a0fb283e517"…
+2025-12-23T21:30:34.340073484Z 9:30:34 PM [express] GET /api/news 304 in 12ms :: []
+2025-12-23T21:30:34.429622621Z 9:30:34 PM [express] GET /api/settings/maintenance-mode 304 in 196ms :: {"enabled":false}
+2025-12-23T21:30:34.458050212Z 9:30:34 PM [express] GET /api/auth/user 304 in 197ms :: {"id":"964ffd85-3a15-4ff7-af3f-e89bb5abf097"…
+2025-12-23T21:30:34.458074303Z 9:30:34 PM [express] GET /api/user/preferences 304 in 197ms :: {"id":"1e95eb96-cfe2-42ac-9d56-fb3e99…
+2025-12-23T21:30:34.618350956Z 9:30:34 PM [express] GET /api/games/current 304 in 6ms :: [{"id":"959a29aa-9e7d-4a25-82ee-2a0fb283e5…
+2025-12-23T21:30:34.646217102Z 9:30:34 PM [express] GET /api/settings/breaking-news 304 in 9ms :: {"message":"🤓👍","active":false,…
+2025-12-23T21:30:37.046616813Z 9:30:37 PM [express] GET /api/stream-requests/game/959a29aa-9e7d-4a25-82ee-2a0fb283e517 304 in 8ms :…
+2025-12-23T21:30:37.055503889Z 9:30:37 PM [express] GET /api/games/959a29aa-9e7d-4a25-82ee-2a0fb283e517 304 in 8ms :: {"id":"959a29…
+2025-12-23T21:30:37.056329647Z 9:30:37 PM [express] GET /api/stream-requests 304 in 6ms :: []
+2025-12-23T21:30:37.057370095Z 9:30:37 PM [express] GET /api/chat/959a29aa-9e7d-4a25-82ee-2a0fb283e517 304 in 8ms :: [{"id":"207926…
+2025-12-23T21:30:37.200250623Z 9:30:37 PM [express] GET /api/standings 304 in 6ms :: []
+2025-12-23T21:30:37.221255573Z Error fetching predictions: PostgresError: column "user_id" does not exist
+2025-12-23T21:30:37.221282735Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-23T21:30:37.221292795Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-23T21:30:37.221297105Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-23T21:30:37.221301736Z     at Socket.emit (node:events:518:28)
+2025-12-23T21:30:37.221320847Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-23T21:30:37.221324057Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-23T21:30:37.221326487Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-23T21:30:37.221328767Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-23T21:30:37.221331747Z   severity_local: 'ERROR',
+2025-12-23T21:30:37.221334787Z   severity: 'ERROR',
+2025-12-23T21:30:37.221337007Z   code: '42703',
+2025-12-23T21:30:37.221339257Z   position: '25',
+2025-12-23T21:30:37.221341477Z   file: 'parse_relation.c',
+2025-12-23T21:30:37.221343728Z   line: '3822',
+2025-12-23T21:30:37.221345918Z   routine: 'errorMissingColumn'
+2025-12-23T21:30:37.221348128Z }
+2025-12-23T21:30:37.223738687Z 9:30:37 PM [express] GET /api/predictions/959a29aa-9e7d-4a25-82ee-2a0fb283e517 500 in 7ms :: {"messa…
+2025-12-23T21:30:37.225297178Z New WebSocket connection
+2025-12-23T21:30:38.395221928Z Error creating prediction: PostgresError: column "user_id" does not exist
+2025-12-23T21:30:38.395294362Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-23T21:30:38.395298502Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-23T21:30:38.395300992Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-23T21:30:38.395303582Z     at Socket.emit (node:events:518:28)
+2025-12-23T21:30:38.395305912Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-23T21:30:38.395307623Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-23T21:30:38.395309312Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-23T21:30:38.395311243Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-23T21:30:38.395313683Z   severity_local: 'ERROR',
+2025-12-23T21:30:38.395315923Z   severity: 'ERROR',
+2025-12-23T21:30:38.395317663Z   code: '42703',
+2025-12-23T21:30:38.395319463Z   position: '25',
+2025-12-23T21:30:38.395321143Z   file: 'parse_relation.c',
+2025-12-23T21:30:38.395322863Z   line: '3822',
+2025-12-23T21:30:38.395324553Z   routine: 'errorMissingColumn'
+2025-12-23T21:30:38.395326303Z }
+2025-12-23T21:30:38.39809342Z 9:30:38 PM [express] POST /api/predictions 400 in 7ms :: {"message":"Failed to create prediction"}
+2025-12-23T21:30:39.172889391Z 9:30:39 PM [express] GET /api/games/959a29aa-9e7d-4a25-82ee-2a0fb283e517 304 in 9ms :: {"id":"959a29…
