@@ -1,0 +1,96 @@
+2025-12-28T01:33:07.837175992Z   line: '208',
+2025-12-28T01:33:07.837178532Z   routine: 'transformCreateStmt'
+2025-12-28T01:33:07.837212953Z }
+2025-12-28T01:33:07.838083965Z {
+2025-12-28T01:33:07.838090065Z   severity_local: 'NOTICE',
+2025-12-28T01:33:07.838093485Z   severity: 'NOTICE',
+2025-12-28T01:33:07.838095826Z   code: '42P07',
+2025-12-28T01:33:07.838097575Z   message: 'relation "settings" already exists, skipping',
+2025-12-28T01:33:07.838100355Z   file: 'parse_utilcmd.c',
+2025-12-28T01:33:07.838103306Z   line: '208',
+2025-12-28T01:33:07.838135396Z   routine: 'transformCreateStmt'
+2025-12-28T01:33:07.838138436Z }
+2025-12-28T01:33:07.838954497Z {
+2025-12-28T01:33:07.838962507Z   severity_local: 'NOTICE',
+2025-12-28T01:33:07.838965617Z   severity: 'NOTICE',
+2025-12-28T01:33:07.838968177Z   code: '42P07',
+2025-12-28T01:33:07.838971068Z   message: 'relation "partners" already exists, skipping',
+2025-12-28T01:33:07.838973937Z   file: 'parse_utilcmd.c',
+2025-12-28T01:33:07.838976577Z   line: '208',
+2025-12-28T01:33:07.838979128Z   routine: 'transformCreateStmt'
+2025-12-28T01:33:07.838981588Z }
+2025-12-28T01:33:07.839914211Z {
+2025-12-28T01:33:07.839921151Z   severity_local: 'NOTICE',
+2025-12-28T01:33:07.839923921Z   severity: 'NOTICE',
+2025-12-28T01:33:07.839926741Z   code: '42P07',
+2025-12-28T01:33:07.839929732Z   message: 'relation "user_preferences" already exists, skipping',
+2025-12-28T01:33:07.839932281Z   file: 'parse_utilcmd.c',
+2025-12-28T01:33:07.839935082Z   line: '208',
+2025-12-28T01:33:07.839937652Z   routine: 'transformCreateStmt'
+2025-12-28T01:33:07.839940242Z }
+2025-12-28T01:33:07.841327496Z {
+2025-12-28T01:33:07.841334737Z   severity_local: 'NOTICE',
+2025-12-28T01:33:07.841337567Z   severity: 'NOTICE',
+2025-12-28T01:33:07.841340307Z   code: '42P07',
+2025-12-28T01:33:07.841342997Z   message: 'relation "update_plans" already exists, skipping',
+2025-12-28T01:33:07.841345437Z   file: 'parse_utilcmd.c',
+2025-12-28T01:33:07.841348307Z   line: '208',
+2025-12-28T01:33:07.841350987Z   routine: 'transformCreateStmt'
+2025-12-28T01:33:07.841353447Z }
+2025-12-28T01:33:07.991323835Z Database schema initialized successfully
+2025-12-28T01:33:08.162613957Z 1:33:08 AM [express] serving on port 10000
+2025-12-28T01:33:13.469736111Z ==> Your service is live 🎉
+2025-12-28T01:33:13.500253759Z ==> 
+2025-12-28T01:33:13.531634787Z ==> ///////////////////////////////////////////////////////////
+2025-12-28T01:33:13.559765576Z ==> 
+2025-12-28T01:33:13.589093045Z ==> Available at your primary URL https://urfl-testing-website-43028430958-1.onrender.com
+2025-12-28T01:33:13.614992413Z ==> 
+2025-12-28T01:33:13.645153022Z ==> ///////////////////////////////////////////////////////////
+2025-12-28T01:38:15.072682498Z ==> Detected service running on port 10000
+2025-12-28T01:38:15.15544674Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+2025-12-28T01:40:05.901452852Z Error fetching all games: PostgresError: column "team1_odds" does not exist
+2025-12-28T01:40:05.901483473Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-28T01:40:05.901489783Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-28T01:40:05.901494203Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-28T01:40:05.901499173Z     at Socket.emit (node:events:518:28)
+2025-12-28T01:40:05.901504263Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-28T01:40:05.901508663Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-28T01:40:05.901511514Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-28T01:40:05.901514283Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-28T01:40:05.901517363Z   severity_local: 'ERROR',
+2025-12-28T01:40:05.901520644Z   severity: 'ERROR',
+2025-12-28T01:40:05.901523454Z   code: '42703',
+2025-12-28T01:40:05.901527114Z   position: '160',
+2025-12-28T01:40:05.901531774Z   file: 'parse_relation.c',
+2025-12-28T01:40:05.901536214Z   line: '3822',
+2025-12-28T01:40:05.901540834Z   routine: 'errorMissingColumn'
+2025-12-28T01:40:05.901544914Z }
+2025-12-28T01:40:05.9620091Z 1:40:05 AM [express] GET /api/games/all 500 in 73ms :: {"message":"Failed to fetch games"}
+2025-12-28T01:40:05.971071897Z node:internal/process/promises:394
+2025-12-28T01:40:05.971946379Z     triggerUncaughtException(err, true /* fromPromise */);
+2025-12-28T01:40:05.971954879Z     ^
+2025-12-28T01:40:05.971958659Z 
+2025-12-28T01:40:05.971962829Z PostgresError: column "coins" does not exist
+2025-12-28T01:40:05.971966779Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-28T01:40:05.971985829Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-28T01:40:05.97198843Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-28T01:40:05.97199078Z     at Socket.emit (node:events:518:28)
+2025-12-28T01:40:05.9720028Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-28T01:40:05.97200554Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-28T01:40:05.97200781Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-28T01:40:05.97201222Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-28T01:40:05.97201481Z   severity_local: 'ERROR',
+2025-12-28T01:40:05.97201739Z   severity: 'ERROR',
+2025-12-28T01:40:05.9720195Z   code: '42703',
+2025-12-28T01:40:05.97202159Z   position: '116',
+2025-12-28T01:40:05.97202361Z   file: 'parse_relation.c',
+2025-12-28T01:40:05.97202577Z   line: '3822',
+2025-12-28T01:40:05.972027751Z   routine: 'errorMissingColumn'
+2025-12-28T01:40:05.972030171Z }
+2025-12-28T01:40:05.972032091Z 
+2025-12-28T01:40:05.972034071Z Node.js v22.16.0
+2025-12-28T01:40:12.014282544Z ==> Running 'npm run start'
+2025-12-28T01:40:13.030115691Z 
+2025-12-28T01:40:13.030141362Z > rest-express@1.0.0 start
+2025-12-28T01:40:13.030146682Z > NODE_ENV=production node dist/index.js
+2025-12-28T01:40:13.030149172Z 
