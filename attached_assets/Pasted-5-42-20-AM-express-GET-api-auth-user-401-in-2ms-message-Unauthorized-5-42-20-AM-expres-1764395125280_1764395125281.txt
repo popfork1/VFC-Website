@@ -1,0 +1,186 @@
+5:42:20 AM [express] GET /api/auth/user 401 in 2ms :: {"message":"Unauthorized"}
+5:42:20 AM [express] GET /api/games/current 200 in 8ms :: [{"id":"4990e7fc-d477-44ae-8d55-4f18e6746d…
+5:42:21 AM [express] GET /api/news 200 in 39ms :: [{"id":"7eedae27-75a8-4af4-96b8-8ecd7eb09d99","tit…
+5:42:53 AM [express] GET /api/auth/user 401 in 1ms :: {"message":"Unauthorized"}
+5:42:53 AM [express] GET /api/news 304 in 4ms :: [{"id":"7eedae27-75a8-4af4-96b8-8ecd7eb09d99","titl…
+5:42:53 AM [express] GET /api/games/current 304 in 5ms :: [{"id":"4990e7fc-d477-44ae-8d55-4f18e6746d…
+5:43:02 AM [express] GET /api/auth/user 401 in 2ms :: {"message":"Unauthorized"}
+5:43:02 AM [express] GET /api/games/current 304 in 3ms :: [{"id":"4990e7fc-d477-44ae-8d55-4f18e6746d…
+5:43:02 AM [express] GET /api/news 304 in 2ms :: [{"id":"7eedae27-75a8-4af4-96b8-8ecd7eb09d99","titl…
+5:43:04 AM [express] GET /api/auth/user 401 in 1ms :: {"message":"Unauthorized"}
+5:43:06 AM [express] POST /api/login 200 in 87ms :: {"success":true}
+5:43:06 AM [express] GET /api/auth/user 200 in 6ms :: {"authenticated":true}
+5:43:06 AM [express] GET /api/games/all 200 in 7ms :: [{"id":"1d33cf6c-b21a-466f-bad9-ae72c14c68b7",…
+5:43:13 AM [express] POST /api/games 200 in 11ms :: {"id":"8ac47d16-5abf-43a3-b16c-033039d82dbe","we…
+5:43:13 AM [express] GET /api/games/all 200 in 9ms :: [{"id":"1d33cf6c-b21a-466f-bad9-ae72c14c68b7",…
+5:43:19 AM [express] DELETE /api/games/8ac47d16-5abf-43a3-b16c-033039d82dbe 200 in 8ms :: {"success"…
+5:43:19 AM [express] GET /api/games/all 200 in 7ms :: [{"id":"1d33cf6c-b21a-466f-bad9-ae72c14c68b7",…
+5:43:22 AM [express] GET /api/games/current 304 in 7ms :: [{"id":"4990e7fc-d477-44ae-8d55-4f18e6746d…
+Error fetching predictions: PostgresError: relation "predictions" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '56',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:43:25 AM [express] GET /api/predictions/796345a6-cdc0-41df-bfd8-c97af1a6074d 500 in 6ms :: {"messa…
+5:43:25 AM [express] GET /api/games/796345a6-cdc0-41df-bfd8-c97af1a6074d 200 in 5ms :: {"id":"796345…
+5:43:25 AM [express] GET /api/chat/796345a6-cdc0-41df-bfd8-c97af1a6074d 200 in 5ms :: []
+New WebSocket connection
+WebSocket connection closed
+Error fetching changelogs: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '110',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:43:28 AM [express] GET /api/changelogs 500 in 6ms :: {"message":"Failed to fetch changelogs"}
+Error fetching changelogs: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '110',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:43:29 AM [express] GET /api/changelogs 500 in 25ms :: {"message":"Failed to fetch changelogs"}
+Error creating changelog: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '13',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:44:26 AM [express] POST /api/changelogs 400 in 17ms :: {"message":"Failed to create changelog"}
+Error creating changelog: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '13',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:44:29 AM [express] POST /api/changelogs 400 in 7ms :: {"message":"Failed to create changelog"}
+5:44:36 AM [express] GET /api/auth/user 304 in 3ms :: {"authenticated":true}
+Error fetching changelogs: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '110',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:44:36 AM [express] GET /api/changelogs 500 in 8ms :: {"message":"Failed to fetch changelogs"}
+Error creating changelog: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '13',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:44:45 AM [express] POST /api/changelogs 400 in 5ms :: {"message":"Failed to create changelog"}
+Error creating changelog: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '13',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:44:46 AM [express] POST /api/changelogs 400 in 5ms :: {"message":"Failed to create changelog"}
+5:44:48 AM [express] GET /api/auth/user 304 in 5ms :: {"authenticated":true}
+Error fetching changelogs: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '110',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:44:48 AM [express] GET /api/changelogs 500 in 6ms :: {"message":"Failed to fetch changelogs"}
