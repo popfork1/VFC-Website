@@ -1,0 +1,324 @@
+
+Search
+
+Live tail
+CST
+
+Menu
+
+==> Downloading cache...
+==> Cloning from https://github.com/d2310261-maker/FFN-Network-Web
+==> Checking out commit 4fa03622c080dbccf0f59c73d1dd2a077bd303c6 in branch main
+==> Downloaded 200MB in 1s. Extraction took 3s.
+==> Using Node.js version 22.16.0 (default)
+==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+==> Running build command 'npm install; npm run build'...
+added 1 package, and audited 499 packages in 1s
+68 packages are looking for funding
+  run `npm fund` for details
+9 vulnerabilities (3 low, 5 moderate, 1 high)
+To address issues that do not require attention, run:
+  npm audit fix
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+Run `npm audit` for details.
+> rest-express@1.0.0 build
+> vite build && esbuild server/index-prod.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index.js
+vite v5.4.20 building for production...
+transforming...
+A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+✓ 2051 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/public/index.html                   2.58 kB │ gzip:   0.95 kB
+../dist/public/assets/index-CqEImHR7.css   90.53 kB │ gzip:  13.79 kB
+../dist/public/assets/index-CAi_wOJL.js   432.47 kB │ gzip: 131.37 kB
+✓ built in 3.54s
+  dist/index.js  20.7kb
+⚡ Done in 5ms
+==> Uploading build...
+==> Uploaded in 9.4s. Compression took 2.8s
+==> Build successful 🎉
+==> Deploying...
+==> Running 'npm run start'
+> rest-express@1.0.0 start
+> NODE_ENV=production node dist/index.js
+10:25:41 PM [express] serving on port 10000
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+==> 
+==> Available at your primary URL https://ffn-network-web.onrender.com
+==> 
+==> ///////////////////////////////////////////////////////////
+10:25:53 PM [express] GET /api/auth/user 304 in 8ms :: {"authenticated":true}
+Error fetching current week games: ErrorEvent {
+  [Symbol(kTarget)]: WebSocket {
+    _events: [Object: null prototype] {
+      error: [Function],
+      message: [Function],
+      close: [Function],
+      open: [Function]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    _binaryType: 'arraybuffer',
+    _closeCode: 1006,
+    _closeFrameReceived: false,
+    _closeFrameSent: false,
+    _closeMessage: <Buffer >,
+    _closeTimer: null,
+    _errorEmitted: true,
+    _extensions: {},
+    _paused: false,
+    _protocol: '',
+    _readyState: 3,
+    _receiver: null,
+    _sender: null,
+    _socket: null,
+    _bufferedAmount: 0,
+    _isServer: false,
+    _redirects: 0,
+    _autoPong: true,
+    _url: 'wss://dpg-d4i0dfidbo4c73bnn8k0-a/v2',
+    _req: null,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  },
+  [Symbol(kType)]: 'error',
+  [Symbol(kError)]: Error: connect ECONNREFUSED 10.230.177.216:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1636:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.230.177.216',
+    port: 443
+  },
+  [Symbol(kMessage)]: 'connect ECONNREFUSED 10.230.177.216:443'
+}
+10:25:53 PM [express] GET /api/games/current 500 in 378ms :: {"message":"Failed to fetch games"}
+Error fetching news: ErrorEvent {
+  [Symbol(kTarget)]: WebSocket {
+    _events: [Object: null prototype] {
+      error: [Function],
+      message: [Function],
+      close: [Function],
+      open: [Function]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    _binaryType: 'arraybuffer',
+    _closeCode: 1006,
+    _closeFrameReceived: false,
+    _closeFrameSent: false,
+    _closeMessage: <Buffer >,
+    _closeTimer: null,
+    _errorEmitted: true,
+    _extensions: {},
+    _paused: false,
+    _protocol: '',
+    _readyState: 3,
+    _receiver: null,
+    _sender: null,
+    _socket: null,
+    _bufferedAmount: 0,
+    _isServer: false,
+    _redirects: 0,
+    _autoPong: true,
+    _url: 'wss://dpg-d4i0dfidbo4c73bnn8k0-a/v2',
+    _req: null,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  },
+  [Symbol(kType)]: 'error',
+  [Symbol(kError)]: Error: connect ECONNREFUSED 10.230.177.216:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1636:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.230.177.216',
+    port: 443
+  },
+  [Symbol(kMessage)]: 'connect ECONNREFUSED 10.230.177.216:443'
+}
+10:25:53 PM [express] GET /api/news 500 in 191ms :: {"message":"Failed to fetch news"}
+Error fetching all games: ErrorEvent {
+  [Symbol(kTarget)]: WebSocket {
+    _events: [Object: null prototype] {
+      error: [Function],
+      message: [Function],
+      close: [Function],
+      open: [Function]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    _binaryType: 'arraybuffer',
+    _closeCode: 1006,
+    _closeFrameReceived: false,
+    _closeFrameSent: false,
+    _closeMessage: <Buffer >,
+    _closeTimer: null,
+    _errorEmitted: true,
+    _extensions: {},
+    _paused: false,
+    _protocol: '',
+    _readyState: 3,
+    _receiver: null,
+    _sender: null,
+    _socket: null,
+    _bufferedAmount: 0,
+    _isServer: false,
+    _redirects: 0,
+    _autoPong: true,
+    _url: 'wss://dpg-d4i0dfidbo4c73bnn8k0-a/v2',
+    _req: null,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  },
+  [Symbol(kType)]: 'error',
+  [Symbol(kError)]: Error: connect ECONNREFUSED 10.230.177.216:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1636:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.230.177.216',
+    port: 443
+  },
+  [Symbol(kMessage)]: 'connect ECONNREFUSED 10.230.177.216:443'
+}
+10:25:55 PM [express] GET /api/games/all 500 in 8ms :: {"message":"Failed to fetch games"}
+Error fetching standings: ErrorEvent {
+  [Symbol(kTarget)]: WebSocket {
+    _events: [Object: null prototype] {
+      error: [Function],
+      message: [Function],
+      close: [Function],
+      open: [Function]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    _binaryType: 'arraybuffer',
+    _closeCode: 1006,
+    _closeFrameReceived: false,
+    _closeFrameSent: false,
+    _closeMessage: <Buffer >,
+    _closeTimer: null,
+    _errorEmitted: true,
+    _extensions: {},
+    _paused: false,
+    _protocol: '',
+    _readyState: 3,
+    _receiver: null,
+    _sender: null,
+    _socket: null,
+    _bufferedAmount: 0,
+    _isServer: false,
+    _redirects: 0,
+    _autoPong: true,
+    _url: 'wss://dpg-d4i0dfidbo4c73bnn8k0-a/v2',
+    _req: null,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  },
+  [Symbol(kType)]: 'error',
+  [Symbol(kError)]: Error: connect ECONNREFUSED 10.230.177.216:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1636:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.230.177.216',
+    port: 443
+  },
+  [Symbol(kMessage)]: 'connect ECONNREFUSED 10.230.177.216:443'
+}
+10:25:56 PM [express] GET /api/standings 500 in 10ms :: {"message":"Failed to fetch standings"}
+Error upserting standing: ErrorEvent {
+  [Symbol(kTarget)]: WebSocket {
+    _events: [Object: null prototype] {
+      error: [Function],
+      message: [Function],
+      close: [Function],
+      open: [Function]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    _binaryType: 'arraybuffer',
+    _closeCode: 1006,
+    _closeFrameReceived: false,
+    _closeFrameSent: false,
+    _closeMessage: <Buffer >,
+    _closeTimer: null,
+    _errorEmitted: true,
+    _extensions: {},
+    _paused: false,
+    _protocol: '',
+    _readyState: 3,
+    _receiver: null,
+    _sender: null,
+    _socket: null,
+    _bufferedAmount: 0,
+    _isServer: false,
+    _redirects: 0,
+    _autoPong: true,
+    _url: 'wss://dpg-d4i0dfidbo4c73bnn8k0-a/v2',
+    _req: null,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  },
+  [Symbol(kType)]: 'error',
+  [Symbol(kError)]: Error: connect ECONNREFUSED 10.230.177.216:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1636:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.230.177.216',
+    port: 443
+  },
+  [Symbol(kMessage)]: 'connect ECONNREFUSED 10.230.177.216:443'
+}
+10:26:00 PM [express] POST /api/standings 400 in 83ms :: {"message":"Failed to save standing"}
+Error fetching all games: ErrorEvent {
+  [Symbol(kTarget)]: WebSocket {
+    _events: [Object: null prototype] {
+      error: [Function],
+      message: [Function],
+      close: [Function],
+      open: [Function]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    _binaryType: 'arraybuffer',
+    _closeCode: 1006,
+    _closeFrameReceived: false,
+    _closeFrameSent: false,
+    _closeMessage: <Buffer >,
+    _closeTimer: null,
+    _errorEmitted: true,
+    _extensions: {},
+    _paused: false,
+    _protocol: '',
+    _readyState: 3,
+    _receiver: null,
+    _sender: null,
+    _socket: null,
+    _bufferedAmount: 0,
+    _isServer: false,
+    _redirects: 0,
+    _autoPong: true,
+    _url: 'wss://dpg-d4i0dfidbo4c73bnn8k0-a/v2',
+    _req: null,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  },
+  [Symbol(kType)]: 'error',
+  [Symbol(kError)]: Error: connect ECONNREFUSED 10.230.177.216:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1636:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '10.230.177.216',
+    port: 443
+  },
+  [Symbol(kMessage)]: 'connect ECONNREFUSED 10.230.177.216:443'
+}
+10:26:20 PM [express] GET /api/games/all 500 in 17ms :: {"message":"Failed to fetch games"}
