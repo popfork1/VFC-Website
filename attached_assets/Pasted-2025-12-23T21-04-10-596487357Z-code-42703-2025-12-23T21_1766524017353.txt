@@ -1,0 +1,50 @@
+2025-12-23T21:04:10.596487357Z   code: '42703',
+2025-12-23T21:04:10.596501218Z   position: '25',
+2025-12-23T21:04:10.596503048Z   file: 'parse_relation.c',
+2025-12-23T21:04:10.596504768Z   line: '3822',
+2025-12-23T21:04:10.596506438Z   routine: 'errorMissingColumn'
+2025-12-23T21:04:10.596508118Z }
+2025-12-23T21:04:10.598532015Z 9:04:10 PM [express] GET /api/stream-requests 304 in 8ms :: []
+2025-12-23T21:04:10.602676342Z 9:04:10 PM [express] GET /api/chat/959a29aa-9e7d-4a25-82ee-2a0fb283e517 200 in 8ms :: [{"id":"207926…
+2025-12-23T21:04:10.60987376Z 9:04:10 PM [express] GET /api/stream-requests/game/959a29aa-9e7d-4a25-82ee-2a0fb283e517 200 in 7ms :…
+2025-12-23T21:04:10.644420628Z 9:04:10 PM [express] GET /api/predictions/959a29aa-9e7d-4a25-82ee-2a0fb283e517 500 in 53ms :: {"mess…
+2025-12-23T21:04:10.719352499Z 9:04:10 PM [express] GET /api/games/959a29aa-9e7d-4a25-82ee-2a0fb283e517 200 in 7ms :: {"id":"959a29…
+2025-12-23T21:04:10.744460726Z 9:04:10 PM [express] GET /api/standings 200 in 7ms :: []
+2025-12-23T21:04:10.747777833Z New WebSocket connection
+2025-12-23T21:04:12.233317123Z Error creating prediction: PostgresError: column "user_id" does not exist
+2025-12-23T21:04:12.233347814Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-23T21:04:12.233354704Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-23T21:04:12.233360084Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-23T21:04:12.233398295Z     at Socket.emit (node:events:518:28)
+2025-12-23T21:04:12.233404575Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-23T21:04:12.233408125Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-23T21:04:12.233411665Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-23T21:04:12.233415185Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-23T21:04:12.233419335Z   severity_local: 'ERROR',
+2025-12-23T21:04:12.233423465Z   severity: 'ERROR',
+2025-12-23T21:04:12.233426985Z   code: '42703',
+2025-12-23T21:04:12.233430466Z   position: '25',
+2025-12-23T21:04:12.233433896Z   file: 'parse_relation.c',
+2025-12-23T21:04:12.233437396Z   line: '3822',
+2025-12-23T21:04:12.233441256Z   routine: 'errorMissingColumn'
+2025-12-23T21:04:12.233444766Z }
+2025-12-23T21:04:12.235820701Z 9:04:12 PM [express] POST /api/predictions 400 in 6ms :: {"message":"Failed to create prediction"}
+2025-12-23T21:04:12.932043113Z 9:04:12 PM [express] GET /api/games/959a29aa-9e7d-4a25-82ee-2a0fb283e517 304 in 87ms :: {"id":"959a2…
+2025-12-23T21:04:13.97674225Z Error creating prediction: PostgresError: column "user_id" does not exist
+2025-12-23T21:04:13.97675774Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2025-12-23T21:04:13.976761661Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2025-12-23T21:04:13.97676457Z     at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2025-12-23T21:04:13.976767921Z     at Socket.emit (node:events:518:28)
+2025-12-23T21:04:13.976771421Z     at addChunk (node:internal/streams/readable:561:12)
+2025-12-23T21:04:13.976774271Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2025-12-23T21:04:13.976777141Z     at Readable.push (node:internal/streams/readable:392:5)
+2025-12-23T21:04:13.976780081Z     at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+2025-12-23T21:04:13.976783921Z   severity_local: 'ERROR',
+2025-12-23T21:04:13.976789601Z   severity: 'ERROR',
+2025-12-23T21:04:13.976807842Z   code: '42703',
+2025-12-23T21:04:13.976810652Z   position: '25',
+2025-12-23T21:04:13.976813262Z   file: 'parse_relation.c',
+2025-12-23T21:04:13.976815832Z   line: '3822',
+2025-12-23T21:04:13.976818352Z   routine: 'errorMissingColumn'
+2025-12-23T21:04:13.976821252Z }
+2025-12-23T21:04:13.979589437Z 9:04:13 PM [express] POST /api/predictions 400 in 6ms :: {"message":"Failed to create prediction"}
