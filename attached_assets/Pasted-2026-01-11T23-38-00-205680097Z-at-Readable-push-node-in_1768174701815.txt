@@ -1,0 +1,50 @@
+2026-01-11T23:38:00.205680097Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-11T23:38:00.205681837Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-11T23:38:00.205684047Z   severity_local: 'ERROR',
+2026-01-11T23:38:00.205686477Z   severity: 'ERROR',
+2026-01-11T23:38:00.205688207Z   code: '42703',
+2026-01-11T23:38:00.205689967Z   position: '22',
+2026-01-11T23:38:00.205691697Z   file: 'parse_relation.c',
+2026-01-11T23:38:00.205693857Z   line: '3722',
+2026-01-11T23:38:00.205695587Z   routine: 'errorMissingColumn'
+2026-01-11T23:38:00.205697287Z }
+2026-01-11T23:38:00.254246988Z 11:38:00 PM [express] GET /api/user/preferences 304 in 656ms :: {}
+2026-01-11T23:38:00.270127528Z 11:38:00 PM [express] GET /api/games/current 500 in 192ms :: {"message":"Failed to fetch games"}
+2026-01-11T23:38:00.843714953Z 11:38:00 PM [express] GET /api/settings/maintenance-mode 304 in 1244ms :: {"enabled":false}
+2026-01-11T23:38:01.100252399Z 11:38:01 PM [express] GET /api/settings/breaking-news 304 in 1101ms :: {"message":"","active":false,"…
+2026-01-11T23:38:01.983283245Z Error fetching all games: PostgresError: column "season" does not exist
+2026-01-11T23:38:01.983307777Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-11T23:38:01.983310607Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-11T23:38:01.983312917Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-11T23:38:01.983315577Z     at TLSSocket.emit (node:events:518:28)
+2026-01-11T23:38:01.983317778Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-11T23:38:01.983319538Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-11T23:38:01.983321328Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-11T23:38:01.983323088Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-11T23:38:01.983325958Z   severity_local: 'ERROR',
+2026-01-11T23:38:01.983329038Z   severity: 'ERROR',
+2026-01-11T23:38:01.983344049Z   code: '42703',
+2026-01-11T23:38:01.983347219Z   position: '22',
+2026-01-11T23:38:01.983350309Z   file: 'parse_relation.c',
+2026-01-11T23:38:01.98335314Z   line: '3722',
+2026-01-11T23:38:01.98335605Z   routine: 'errorMissingColumn'
+2026-01-11T23:38:01.98335899Z }
+2026-01-11T23:38:02.048447288Z 11:38:02 PM [express] GET /api/games/all 500 in 194ms :: {"message":"Failed to fetch games"}
+2026-01-11T23:38:07.795576364Z Error creating game: PostgresError: column "season" of relation "games" does not exist
+2026-01-11T23:38:07.795602305Z     at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+2026-01-11T23:38:07.795605155Z     at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+2026-01-11T23:38:07.795607655Z     at TLSSocket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+2026-01-11T23:38:07.795610715Z     at TLSSocket.emit (node:events:518:28)
+2026-01-11T23:38:07.795613406Z     at addChunk (node:internal/streams/readable:561:12)
+2026-01-11T23:38:07.795616956Z     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-01-11T23:38:07.795620796Z     at Readable.push (node:internal/streams/readable:392:5)
+2026-01-11T23:38:07.795624586Z     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-01-11T23:38:07.795628396Z   severity_local: 'ERROR',
+2026-01-11T23:38:07.795650198Z   severity: 'ERROR',
+2026-01-11T23:38:07.795657128Z   code: '42703',
+2026-01-11T23:38:07.795661028Z   position: '36',
+2026-01-11T23:38:07.795664958Z   file: 'parse_target.c',
+2026-01-11T23:38:07.795667549Z   line: '1066',
+2026-01-11T23:38:07.795669639Z   routine: 'checkInsertTargets'
+2026-01-11T23:38:07.795671889Z }
+2026-01-11T23:38:07.860981669Z 11:38:07 PM [express] POST /api/games 400 in 197ms :: {"message":"Failed to create game"}
