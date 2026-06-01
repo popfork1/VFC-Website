@@ -1,0 +1,50 @@
+2025-12-13T04:58:05.313212421Z   message: 'relation "bracket_images" already exists, skipping',
+2025-12-13T04:58:05.313214641Z   file: 'parse_utilcmd.c',
+2025-12-13T04:58:05.313241242Z   line: '208',
+2025-12-13T04:58:05.313244953Z   routine: 'transformCreateStmt'
+2025-12-13T04:58:05.313248533Z }
+2025-12-13T04:58:05.314559832Z {
+2025-12-13T04:58:05.314570182Z   severity_local: 'NOTICE',
+2025-12-13T04:58:05.314573803Z   severity: 'NOTICE',
+2025-12-13T04:58:05.314576563Z   code: '42P07',
+2025-12-13T04:58:05.314579523Z   message: 'relation "stream_requests" already exists, skipping',
+2025-12-13T04:58:05.314582073Z   file: 'parse_utilcmd.c',
+2025-12-13T04:58:05.314584663Z   line: '208',
+2025-12-13T04:58:05.314587533Z   routine: 'transformCreateStmt'
+2025-12-13T04:58:05.314590213Z }
+2025-12-13T04:58:05.31584535Z {
+2025-12-13T04:58:05.31585367Z   severity_local: 'NOTICE',
+2025-12-13T04:58:05.31585728Z   severity: 'NOTICE',
+2025-12-13T04:58:05.315860191Z   code: '42P07',
+2025-12-13T04:58:05.315863661Z   message: 'relation "settings" already exists, skipping',
+2025-12-13T04:58:05.315866541Z   file: 'parse_utilcmd.c',
+2025-12-13T04:58:05.315869291Z   line: '208',
+2025-12-13T04:58:05.315871931Z   routine: 'transformCreateStmt'
+2025-12-13T04:58:05.315886482Z }
+2025-12-13T04:58:05.316005958Z Database schema initialized successfully
+2025-12-13T04:58:05.594469435Z 4:58:05 AM [express] serving on port 10000
+2025-12-13T04:58:11.975619643Z ==> Your service is live 🎉
+2025-12-13T04:58:12.036251088Z ==> 
+2025-12-13T04:58:12.078651974Z ==> ///////////////////////////////////////////////////////////
+2025-12-13T04:58:12.117778171Z ==> 
+2025-12-13T04:58:12.152587639Z ==> Available at your primary URL https://urfl-fan-network.onrender.com
+2025-12-13T04:58:12.186288796Z ==> 
+2025-12-13T04:58:12.221851713Z ==> ///////////////////////////////////////////////////////////
+2025-12-13T04:58:24.309157983Z node:internal/process/promises:394
+2025-12-13T04:58:24.309186874Z     triggerUncaughtException(err, true /* fromPromise */);
+2025-12-13T04:58:24.309190844Z     ^
+2025-12-13T04:58:24.309194305Z 
+2025-12-13T04:58:24.309197905Z Error: UNDEFINED_VALUE: Undefined values are not allowed
+2025-12-13T04:58:24.309201965Z     at handleValue (file:///opt/render/project/src/node_modules/postgres/src/types.js:83:20)
+2025-12-13T04:58:24.309209385Z     at file:///opt/render/project/src/node_modules/postgres/src/connection.js:225:38
+2025-12-13T04:58:24.309213156Z     at Array.forEach (<anonymous>)
+2025-12-13T04:58:24.309247058Z     at build (file:///opt/render/project/src/node_modules/postgres/src/connection.js:225:25)
+2025-12-13T04:58:24.309253258Z     at Object.execute (file:///opt/render/project/src/node_modules/postgres/src/connection.js:167:7)
+2025-12-13T04:58:24.309257228Z     at go (file:///opt/render/project/src/node_modules/postgres/src/index.js:345:14)
+2025-12-13T04:58:24.309261038Z     at Query.handler (file:///opt/render/project/src/node_modules/postgres/src/index.js:334:14)
+2025-12-13T04:58:24.309264488Z     at Query.handle (file:///opt/render/project/src/node_modules/postgres/src/query.js:140:65)
+2025-12-13T04:58:24.309267919Z     at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+2025-12-13T04:58:24.309272059Z   code: 'UNDEFINED_VALUE'
+2025-12-13T04:58:24.309275609Z }
+2025-12-13T04:58:24.309278829Z 
+2025-12-13T04:58:24.30928216Z Node.js v22.16.0
