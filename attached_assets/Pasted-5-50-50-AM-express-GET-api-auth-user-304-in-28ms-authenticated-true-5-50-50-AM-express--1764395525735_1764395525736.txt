@@ -1,0 +1,83 @@
+5:50:50 AM [express] GET /api/auth/user 304 in 28ms :: {"authenticated":true}
+5:50:50 AM [express] GET /api/news 304 in 53ms :: [{"id":"7eedae27-75a8-4af4-96b8-8ecd7eb09d99","tit…
+5:50:50 AM [express] GET /api/games/current 304 in 245ms :: [{"id":"4990e7fc-d477-44ae-8d55-4f18e674…
+5:50:52 AM [express] GET /api/chat/4990e7fc-d477-44ae-8d55-4f18e6746d0f 200 in 7ms :: []
+Error fetching predictions: PostgresError: relation "predictions" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '56',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:50:52 AM [express] GET /api/predictions/4990e7fc-d477-44ae-8d55-4f18e6746d0f 500 in 19ms :: {"mess…
+5:50:52 AM [express] GET /api/games/4990e7fc-d477-44ae-8d55-4f18e6746d0f 200 in 10ms :: {"id":"4990e…
+New WebSocket connection
+WebSocket connection closed
+Error fetching predictions: PostgresError: relation "predictions" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '56',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:51:01 AM [express] GET /api/predictions/4990e7fc-d477-44ae-8d55-4f18e6746d0f 500 in 6ms :: {"messa…
+New WebSocket connection
+WebSocket connection closed
+Error fetching predictions: PostgresError: relation "predictions" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '56',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:51:03 AM [express] GET /api/predictions/4990e7fc-d477-44ae-8d55-4f18e6746d0f 500 in 5ms :: {"messa…
+New WebSocket connection
+WebSocket connection closed
+Error fetching changelogs: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '110',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+5:51:08 AM [express] GET /api/changelogs 500 in 9ms :: {"message":"Failed to fetch changelogs"}
