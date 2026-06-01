@@ -1,0 +1,184 @@
+2025-12-13T04:52:53.078065911Z   file: 'parse_utilcmd.c',
+2025-12-13T04:52:53.078068302Z   line: '208',
+2025-12-13T04:52:53.078070711Z   routine: 'transformCreateStmt'
+2025-12-13T04:52:53.078072942Z }
+2025-12-13T04:52:53.079039102Z {
+2025-12-13T04:52:53.079049702Z   severity_local: 'NOTICE',
+2025-12-13T04:52:53.079053082Z   severity: 'NOTICE',
+2025-12-13T04:52:53.079055402Z   code: '42P07',
+2025-12-13T04:52:53.079058552Z   message: 'relation "bracket_images" already exists, skipping',
+2025-12-13T04:52:53.079061192Z   file: 'parse_utilcmd.c',
+2025-12-13T04:52:53.079063512Z   line: '208',
+2025-12-13T04:52:53.079065732Z   routine: 'transformCreateStmt'
+2025-12-13T04:52:53.079067952Z }
+2025-12-13T04:52:53.080343408Z {
+2025-12-13T04:52:53.080353469Z   severity_local: 'NOTICE',
+2025-12-13T04:52:53.080356809Z   severity: 'NOTICE',
+2025-12-13T04:52:53.080359389Z   code: '42P07',
+2025-12-13T04:52:53.080362609Z   message: 'relation "stream_requests" already exists, skipping',
+2025-12-13T04:52:53.080365239Z   file: 'parse_utilcmd.c',
+2025-12-13T04:52:53.080368009Z   line: '208',
+2025-12-13T04:52:53.080370559Z   routine: 'transformCreateStmt'
+2025-12-13T04:52:53.080373029Z }
+2025-12-13T04:52:53.087576047Z Database schema initialized successfully
+2025-12-13T04:52:53.375778795Z 4:52:53 AM [express] serving on port 10000
+2025-12-13T04:52:56.267703424Z ==> Your service is live 🎉
+2025-12-13T04:52:56.348432888Z ==> 
+2025-12-13T04:52:56.390360325Z ==> ///////////////////////////////////////////////////////////
+2025-12-13T04:52:56.427862092Z ==> 
+2025-12-13T04:52:56.496370367Z ==> Available at your primary URL https://urfl-fan-network.onrender.com
+2025-12-13T04:52:56.540714443Z ==> 
+2025-12-13T04:52:56.58441194Z ==> ///////////////////////////////////////////////////////////
+2025-12-13T04:53:03.254538189Z 4:53:03 AM [express] GET /api/settings/maintenance-mode 200 in 13ms :: {"enabled":false}
+2025-12-13T04:53:03.266846342Z node:internal/process/promises:394
+2025-12-13T04:53:03.266873023Z     triggerUncaughtException(err, true /* fromPromise */);
+2025-12-13T04:53:03.266886123Z     ^
+2025-12-13T04:53:03.266888723Z 
+2025-12-13T04:53:03.266890943Z Error: UNDEFINED_VALUE: Undefined values are not allowed
+2025-12-13T04:53:03.266893923Z     at handleValue (file:///opt/render/project/src/node_modules/postgres/src/types.js:83:20)
+2025-12-13T04:53:03.266897293Z     at file:///opt/render/project/src/node_modules/postgres/src/connection.js:225:38
+2025-12-13T04:53:03.266899393Z     at Array.forEach (<anonymous>)
+2025-12-13T04:53:03.266901703Z     at build (file:///opt/render/project/src/node_modules/postgres/src/connection.js:225:25)
+2025-12-13T04:53:03.266904443Z     at Object.execute (file:///opt/render/project/src/node_modules/postgres/src/connection.js:167:7)
+2025-12-13T04:53:03.266906554Z     at go (file:///opt/render/project/src/node_modules/postgres/src/index.js:345:14)
+2025-12-13T04:53:03.266908543Z     at Query.handler (file:///opt/render/project/src/node_modules/postgres/src/index.js:334:14)
+2025-12-13T04:53:03.266910674Z     at Query.handle (file:///opt/render/project/src/node_modules/postgres/src/query.js:140:65)
+2025-12-13T04:53:03.266912734Z     at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+2025-12-13T04:53:03.266915464Z   code: 'UNDEFINED_VALUE'
+2025-12-13T04:53:03.266917534Z }
+2025-12-13T04:53:03.266919404Z 
+2025-12-13T04:53:03.266921384Z Node.js v22.16.0
+2025-12-13T04:53:09.966952922Z ==> Running 'npm run start'
+2025-12-13T04:53:10.87694584Z 
+2025-12-13T04:53:10.876971371Z > rest-express@1.0.0 start
+2025-12-13T04:53:10.876976021Z > NODE_ENV=production node dist/index.js
+2025-12-13T04:53:10.876978101Z 
+2025-12-13T04:53:17.46819519Z Initializing database schema...
+2025-12-13T04:53:17.873774776Z {
+2025-12-13T04:53:17.873808807Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.873815687Z   severity: 'NOTICE',
+2025-12-13T04:53:17.873819847Z   code: '42P07',
+2025-12-13T04:53:17.873825207Z   message: 'relation "sessions" already exists, skipping',
+2025-12-13T04:53:17.873829637Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.873832537Z   line: '208',
+2025-12-13T04:53:17.873835357Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.873838138Z }
+2025-12-13T04:53:17.873840978Z {
+2025-12-13T04:53:17.873843778Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.873846578Z   severity: 'NOTICE',
+2025-12-13T04:53:17.873849388Z   code: '42P07',
+2025-12-13T04:53:17.873852178Z   message: 'relation "users" already exists, skipping',
+2025-12-13T04:53:17.873855048Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.873857788Z   line: '208',
+2025-12-13T04:53:17.873860548Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.873863408Z }
+2025-12-13T04:53:17.873866188Z {
+2025-12-13T04:53:17.873868988Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.873871748Z   severity: 'NOTICE',
+2025-12-13T04:53:17.873874528Z   code: '42P07',
+2025-12-13T04:53:17.873877308Z   message: 'relation "games" already exists, skipping',
+2025-12-13T04:53:17.873880038Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.873882738Z   line: '208',
+2025-12-13T04:53:17.873885539Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.873888288Z }
+2025-12-13T04:53:17.874649244Z {
+2025-12-13T04:53:17.874658484Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.874663515Z   severity: 'NOTICE',
+2025-12-13T04:53:17.874667765Z   code: '42P07',
+2025-12-13T04:53:17.874672385Z   message: 'relation "news" already exists, skipping',
+2025-12-13T04:53:17.874676665Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.874681285Z   line: '208',
+2025-12-13T04:53:17.874685715Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.874690405Z }
+2025-12-13T04:53:17.876134155Z {
+2025-12-13T04:53:17.876146365Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.876151445Z   severity: 'NOTICE',
+2025-12-13T04:53:17.876155995Z   code: '42P07',
+2025-12-13T04:53:17.876160785Z   message: 'relation "chat_messages" already exists, skipping',
+2025-12-13T04:53:17.876165506Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.876169686Z   line: '208',
+2025-12-13T04:53:17.876174126Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.876178936Z }
+2025-12-13T04:53:17.877513853Z {
+2025-12-13T04:53:17.877526023Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.877531574Z   severity: 'NOTICE',
+2025-12-13T04:53:17.877535764Z   code: '42P07',
+2025-12-13T04:53:17.877540234Z   message: 'relation "pickems" already exists, skipping',
+2025-12-13T04:53:17.877544444Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.877548474Z   line: '208',
+2025-12-13T04:53:17.877552264Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.877558934Z }
+2025-12-13T04:53:17.879834391Z {
+2025-12-13T04:53:17.879845931Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.879851061Z   severity: 'NOTICE',
+2025-12-13T04:53:17.879855051Z   code: '42P07',
+2025-12-13T04:53:17.879859671Z   message: 'relation "pickem_rules" already exists, skipping',
+2025-12-13T04:53:17.879874712Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.879877362Z   line: '208',
+2025-12-13T04:53:17.879880382Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.879883442Z }
+2025-12-13T04:53:17.882002296Z {
+2025-12-13T04:53:17.882011806Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.882015436Z   severity: 'NOTICE',
+2025-12-13T04:53:17.882046596Z   code: '42P07',
+2025-12-13T04:53:17.882050587Z   message: 'relation "standings" already exists, skipping',
+2025-12-13T04:53:17.882053517Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.882056167Z   line: '208',
+2025-12-13T04:53:17.882058617Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.882061297Z }
+2025-12-13T04:53:17.977203037Z {
+2025-12-13T04:53:17.977223468Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.977227028Z   severity: 'NOTICE',
+2025-12-13T04:53:17.977229258Z   code: '42P07',
+2025-12-13T04:53:17.977248038Z   message: 'relation "playoff_matches" already exists, skipping',
+2025-12-13T04:53:17.977250478Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.977252638Z   line: '208',
+2025-12-13T04:53:17.977254808Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.977257058Z }
+2025-12-13T04:53:17.978580225Z {
+2025-12-13T04:53:17.978591836Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.978595146Z   severity: 'NOTICE',
+2025-12-13T04:53:17.978597326Z   code: '42P07',
+2025-12-13T04:53:17.978599986Z   message: 'relation "changelogs" already exists, skipping',
+2025-12-13T04:53:17.978602056Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.978604296Z   line: '208',
+2025-12-13T04:53:17.978606416Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.978608456Z }
+2025-12-13T04:53:17.979735159Z {
+2025-12-13T04:53:17.9797479Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.97975074Z   severity: 'NOTICE',
+2025-12-13T04:53:17.97975289Z   code: '42P07',
+2025-12-13T04:53:17.97975558Z   message: 'relation "predictions" already exists, skipping',
+2025-12-13T04:53:17.97975731Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.97975911Z   line: '208',
+2025-12-13T04:53:17.97976095Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.97976276Z }
+2025-12-13T04:53:17.980947974Z {
+2025-12-13T04:53:17.980958214Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.980961174Z   severity: 'NOTICE',
+2025-12-13T04:53:17.980963345Z   code: '42P07',
+2025-12-13T04:53:17.980965795Z   message: 'relation "bracket_images" already exists, skipping',
+2025-12-13T04:53:17.980968295Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.980970585Z   line: '208',
+2025-12-13T04:53:17.980972915Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.980975075Z }
+2025-12-13T04:53:17.982111888Z {
+2025-12-13T04:53:17.982120829Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.982122918Z   severity: 'NOTICE',
+2025-12-13T04:53:17.982124738Z   code: '42P07',
+2025-12-13T04:53:17.982127149Z   message: 'relation "stream_requests" already exists, skipping',
+2025-12-13T04:53:17.982128879Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.982130549Z   line: '208',
+2025-12-13T04:53:17.982132449Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.982134159Z }
+2025-12-13T04:53:17.983871805Z {
+2025-12-13T04:53:17.983882575Z   severity_local: 'NOTICE',
+2025-12-13T04:53:17.983887165Z   severity: 'NOTICE',
+2025-12-13T04:53:17.983890155Z   code: '42P07',
+2025-12-13T04:53:17.983893565Z   message: 'relation "settings" already exists, skipping',
+2025-12-13T04:53:17.983896465Z   file: 'parse_utilcmd.c',
+2025-12-13T04:53:17.983899275Z   line: '208',
+2025-12-13T04:53:17.983914265Z   routine: 'transformCreateStmt'
+2025-12-13T04:53:17.983917385Z }
+2025-12-13T04:53:17.983921246Z Database schema initialized successfully
+2025-12-13T04:53:18.282986387Z 4:53:18 AM [express] serving on port 10000
