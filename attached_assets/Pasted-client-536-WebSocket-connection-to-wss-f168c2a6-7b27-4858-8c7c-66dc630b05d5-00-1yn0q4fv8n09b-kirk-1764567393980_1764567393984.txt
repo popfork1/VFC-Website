@@ -1,0 +1,46 @@
+client:536 WebSocket connection to 'wss://f168c2a6-7b27-4858-8c7c-66dc630b05d5-00-1yn0q4fv8n09b.kirk.replit.dev/?token=0F-ELbjEoO69' failed: 
+setupWebSocket @ client:536
+client:536 Uncaught (in promise) SyntaxError: Failed to construct 'WebSocket': The URL 'wss://localhost:undefined/?token=0F-ELbjEoO69' is invalid.
+    at setupWebSocket (client:536:19)
+    at fallback (client:509:16)
+    at WebSocket.<anonymous> (client:555:7)
+chunk-RPCDYKBN.js?v=9266e503:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+GameDetail.tsx:142 WebSocket connected
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 4th, Scores: 21-0, PD: 0-0
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team1: 65
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 4th, Scores: 21-0, PD: 0-0
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team2: 65
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 4th, Scores: 21-0, PD: 0-0
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team1: 65
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 4th, Scores: 21-0, PD: 0-0
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team2: 65
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 4th, Scores: 21-0, PD: 0-0
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team1: 65
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 4th, Scores: 21-0, PD: 0-0
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team2: 65
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 4th, Scores: 21-0, PD: -42-64
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team1: 60
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 4th, Scores: 21-0, PD: -42-64
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team2: 60
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 4th, Scores: 21-0, PD: -42-64
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team1: 60
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 4th, Scores: 21-0, PD: -42-64
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team2: 60
+GameDetail.tsx:161 WebSocket disconnected
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 1st, Scores: 21-0, PD: -42-64
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team1: 60
+winProbability.ts:24 [WinProb] Houston Texans vs Kansas City Chiefs - Quarter: 1st, Scores: 21-0, PD: -42-64
+winProbability.ts:42 [WinProb] Score diff: 21, Quarter weight: 0.5, Score impact: 15
+winProbability.ts:48 [WinProb] Final probability for team2: 60
+GameDetail.tsx:142 WebSocket connected
