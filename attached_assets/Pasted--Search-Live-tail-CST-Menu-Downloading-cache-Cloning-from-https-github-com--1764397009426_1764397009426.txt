@@ -1,0 +1,250 @@
+
+Search
+
+Live tail
+CST
+
+Menu
+
+==> Downloading cache...
+==> Cloning from https://github.com/d2310261-maker/FFN-Network-BFFL-Fan-Hub
+==> Checking out commit d6e97459b1e676b9f5a0c9e7e1299e38573bd0a6 in branch main
+==> Downloaded 201MB in 2s. Extraction took 6s.
+==> Using Node.js version 22.16.0 (default)
+==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+==> Running build command 'npm run db:push && npm run build'...
+> rest-express@1.0.0 db:push
+> drizzle-kit push
+No config path provided, using default 'drizzle.config.ts'
+Reading config file '/opt/render/project/src/drizzle.config.ts'
+Using 'pg' driver for database querying
+[⣷] Pulling schema from database...
+[⣯] Pulling schema from database...
+[⣟] Pulling schema from database...
+[⡿] Pulling schema from database...
+[⢿] Pulling schema from database...
+[⣻] Pulling schema from database...
+[⣽] Pulling schema from database...
+[⣷] Pulling schema from database...
+[⣯] Pulling schema from database...
+[⣟] Pulling schema from database...
+[⡿] Pulling schema from database...
+[⢿] Pulling schema from database...
+[⣻] Pulling schema from database...
+[⣽] Pulling schema from database...
+[⣷] Pulling schema from database...
+[⣯] Pulling schema from database...
+[⣟] Pulling schema from database...
+[✓] Pulling schema from database...
+· You're about to add pickems_week_unique unique constraint to the table, which contains 2 items. If this statement fails, you will receive an error from the database. Do you want to truncate pickems table?
+❯ No, add the constraint without truncating the table
+  Yes, truncate the table
+> rest-express@1.0.0 build
+> vite build && esbuild server/index-prod.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index.js
+vite v5.4.20 building for production...
+transforming...
+A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+✓ 2060 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/public/index.html                   2.58 kB │ gzip:   0.95 kB
+../dist/public/assets/index-DufpIbxU.css  101.24 kB │ gzip:  15.20 kB
+../dist/public/assets/index-CkcHZOaf.js   463.00 kB │ gzip: 139.75 kB
+✓ built in 4.31s
+  dist/index.js  33.8kb
+⚡ Done in 5ms
+==> Uploading build...
+==> Uploaded in 7.3s. Compression took 3.0s
+==> Build successful 🎉
+==> Deploying...
+==> Running 'npm run start'
+> rest-express@1.0.0 start
+> NODE_ENV=production node dist/index.js
+Initializing database schema...
+{
+  severity_local: 'NOTICE',
+  severity: 'NOTICE',
+  code: '42P07',
+  message: 'relation "sessions" already exists, skipping',
+  file: 'parse_utilcmd.c',
+  line: '208',
+  routine: 'transformCreateStmt'
+}
+{
+  severity_local: 'NOTICE',
+  severity: 'NOTICE',
+  code: '42P07',
+  message: 'relation "users" already exists, skipping',
+  file: 'parse_utilcmd.c',
+  line: '208',
+  routine: 'transformCreateStmt'
+}
+{
+  severity_local: 'NOTICE',
+  severity: 'NOTICE',
+  code: '42P07',
+  message: 'relation "games" already exists, skipping',
+  file: 'parse_utilcmd.c',
+  line: '208',
+  routine: 'transformCreateStmt'
+}
+{
+  severity_local: 'NOTICE',
+  severity: 'NOTICE',
+  code: '42P07',
+  message: 'relation "news" already exists, skipping',
+  file: 'parse_utilcmd.c',
+  line: '208',
+  routine: 'transformCreateStmt'
+}
+{
+  severity_local: 'NOTICE',
+  severity: 'NOTICE',
+  code: '42P07',
+  message: 'relation "chat_messages" already exists, skipping',
+  file: 'parse_utilcmd.c',
+  line: '208',
+  routine: 'transformCreateStmt'
+}
+{
+  severity_local: 'NOTICE',
+  severity: 'NOTICE',
+  code: '42P07',
+  message: 'relation "pickems" already exists, skipping',
+  file: 'parse_utilcmd.c',
+  line: '208',
+  routine: 'transformCreateStmt'
+}
+{
+  severity_local: 'NOTICE',
+  severity: 'NOTICE',
+  code: '42P07',
+  message: 'relation "pickem_rules" already exists, skipping',
+  file: 'parse_utilcmd.c',
+  line: '208',
+  routine: 'transformCreateStmt'
+}
+{
+  severity_local: 'NOTICE',
+  severity: 'NOTICE',
+  code: '42P07',
+  message: 'relation "standings" already exists, skipping',
+  file: 'parse_utilcmd.c',
+  line: '208',
+  routine: 'transformCreateStmt'
+}
+{
+  severity_local: 'NOTICE',
+  severity: 'NOTICE',
+  code: '42P07',
+  message: 'relation "playoff_matches" already exists, skipping',
+  file: 'parse_utilcmd.c',
+  line: '208',
+  routine: 'transformCreateStmt'
+}
+Database schema initialized successfully
+6:16:02 AM [express] serving on port 10000
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+==> 
+==> Available at your primary URL https://ffn-network-web.onrender.com
+==> 
+==> ///////////////////////////////////////////////////////////
+6:16:16 AM [express] GET /api/auth/user 304 in 5ms :: {"authenticated":true}
+6:16:16 AM [express] GET /api/news 304 in 51ms :: [{"id":"7eedae27-75a8-4af4-96b8-8ecd7eb09d99","tit…
+6:16:16 AM [express] GET /api/games/current 304 in 63ms :: [{"id":"4990e7fc-d477-44ae-8d55-4f18e6746…
+6:16:18 AM [express] GET /api/chat/d96b7de7-45ad-4d7d-88a0-aaa1f9cd5451 200 in 9ms :: []
+Error fetching predictions: PostgresError: relation "predictions" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '56',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+6:16:19 AM [express] GET /api/predictions/d96b7de7-45ad-4d7d-88a0-aaa1f9cd5451 500 in 10ms :: {"mess…
+6:16:19 AM [express] GET /api/games/d96b7de7-45ad-4d7d-88a0-aaa1f9cd5451 200 in 7ms :: {"id":"d96b7d…
+New WebSocket connection
+Error creating prediction: PostgresError: relation "predictions" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '13',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+6:16:19 AM [express] POST /api/predictions 400 in 9ms :: {"message":"Failed to create prediction"}
+WebSocket connection closed
+Error fetching changelogs: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '110',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+6:16:25 AM [express] GET /api/changelogs 500 in 6ms :: {"message":"Failed to fetch changelogs"}
+Error creating changelog: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '13',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+6:16:30 AM [express] POST /api/changelogs 400 in 7ms :: {"message":"Failed to create changelog"}
+Error creating changelog: PostgresError: relation "changelogs" does not exist
+    at ErrorResponse (file:///opt/render/project/src/node_modules/postgres/src/connection.js:794:26)
+    at handle (file:///opt/render/project/src/node_modules/postgres/src/connection.js:480:6)
+    at Socket.data (file:///opt/render/project/src/node_modules/postgres/src/connection.js:315:9)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42P01',
+  position: '13',
+  file: 'parse_relation.c',
+  line: '1466',
+  routine: 'parserOpenTable'
+}
+6:16:31 AM [express] POST /api/changelogs 400 in 6ms :: {"message":"Failed to create changelog"}
