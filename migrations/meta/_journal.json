@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1765591873440,
+      "tag": "0000_same_kree",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1766524700000,
+      "tag": "0001_add_user_id_to_predictions",
+      "breakpoints": true
+    }
+  ]
+}
