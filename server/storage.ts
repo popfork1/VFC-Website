@@ -240,12 +240,12 @@ export class DatabaseStorage implements IStorage {
     return await db.select().from(games).orderBy(games.gameTime);
   }
 
-  async getCurrentWeekGames(): Promise<Game[]> {
+  async getCurrentWeekGames(season?: number): Promise<Game[]> {
     const allGames = await db.select().from(games).orderBy(desc(games.week));
     if (allGames.length === 0) return [];
     
-    const latestSeason = 2;
-    const seasonGames = allGames.filter(g => (g.season ?? 1) === latestSeason);
+    const targetSeason = season ?? 2;
+    const seasonGames = allGames.filter(g => (g.season ?? 1) === targetSeason);
     if (seasonGames.length === 0) return [];
 
     // 1. If there are live games, show those

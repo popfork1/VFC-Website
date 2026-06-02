@@ -112,8 +112,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const seasonStr = req.query.season as string;
       const season = seasonStr ? parseInt(seasonStr) : 2;
-      const games = await storage.getCurrentWeekGames();
-      res.json(games.filter(g => (g.season ?? 1) === season));
+      const games = await storage.getCurrentWeekGames(season);
+      res.json(games.filter(g => (g.season ?? 2) === season));
     } catch (error) {
       console.error("Error fetching current week games:", error);
       res.status(500).json({ message: "Failed to fetch games" });

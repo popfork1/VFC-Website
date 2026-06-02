@@ -250,10 +250,21 @@ function GamesManager({ season }: { season: number }) {
 
   const { data: dbTeams = [] } = useQuery<Team[]>({ queryKey: ["/api/teams"] });
   const teamNames = [...dbTeams].sort((a, b) => a.name.localeCompare(b.name)).map(t => t.name);
-  const { data: allGames } = useQuery<Game[]>({ queryKey: ["/api/games/all"] });
-  const games = allGames?.filter((g) => (g.season ?? 1) === season);
+  const { data: allGames } = useQuery<Game[]>({
+    queryKey: ["/api/games/all", season],
+    queryFn: async () => {
+      const res = await fetch(`/api/games/all?season=${season}`);
+      if (!res.ok) throw new Error("Failed to fetch games");
+      return res.json();
+    },
+    staleTime: 0,
+  });
+  const games = allGames ?? [];
 
-  const invalidateGames = () => queryClient.invalidateQueries({ predicate: (q) => typeof q.queryKey[0] === "string" && (q.queryKey[0] as string).startsWith("/api/games") });
+  const invalidateGames = () => {
+    queryClient.invalidateQueries({ queryKey: ["/api/games/all", season] });
+    queryClient.invalidateQueries({ predicate: (q) => typeof q.queryKey[0] === "string" && (q.queryKey[0] as string).startsWith("/api/games") });
+  };
 
   const createMutation = useMutation({
     mutationFn: async (items: any[]) => {
@@ -412,10 +423,21 @@ function ScoresManager({ season }: { season: number }) {
   const { toast } = useToast();
   const { weekOptions } = useWeekConfig();
   const [filterWeek, setFilterWeek] = useState<string>("all");
-  const { data: allGames } = useQuery<Game[]>({ queryKey: ["/api/games/all"] });
-  const games = allGames?.filter((g) => (g.season ?? 1) === season);
+  const { data: allGames } = useQuery<Game[]>({
+    queryKey: ["/api/games/all", season],
+    queryFn: async () => {
+      const res = await fetch(`/api/games/all?season=${season}`);
+      if (!res.ok) throw new Error("Failed to fetch games");
+      return res.json();
+    },
+    staleTime: 0,
+  });
+  const games = allGames ?? [];
 
-  const invalidateGames = () => queryClient.invalidateQueries({ predicate: (q) => typeof q.queryKey[0] === "string" && (q.queryKey[0] as string).startsWith("/api/games") });
+  const invalidateGames = () => {
+    queryClient.invalidateQueries({ queryKey: ["/api/games/all", season] });
+    queryClient.invalidateQueries({ predicate: (q) => typeof q.queryKey[0] === "string" && (q.queryKey[0] as string).startsWith("/api/games") });
+  };
 
   const updateMutation = useMutation({
     mutationFn: ({ id, data }: { id: string; data: Partial<Game> }) => apiRequest("PATCH", `/api/games/${id}`, data),
